@@ -1,0 +1,29 @@
+#进入容器的交互模式
+docker exec -it container-id /bin/sh
+
+#进入后查看进程
+（#安装ps）
+（apt-get update
+  apt-get install -y procps)
+ps aux (或者 top)
+
+#进入后查看mounted files, check installed python packages
+ls -al
+pip list
+
+#检查容器的状态
+docker stats (--no-stream)
+# build an image
+docker build -t image_name:version .
+
+# run a container
+docker run (-d, detach mode) --name container-name
+(-p outside_port:docker_port) (-v outside_volume:docker_volume) container-id
+docker run --name ng_eu_test2 -p 8000:80 -v C:\Users\liaos\Desktop\Projects_Python\ng_eu:/ng_eu d2fc25cb24ca
+
+
+# check the container
+docker logs （-f, print continuously) container-id
+docker inspect container-id
+
+

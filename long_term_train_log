@@ -1,0 +1,904 @@
+2024-07-25 11:38:51,441 - INFO - Data processing for ElecUseShortTermPredictor-None-in_24_1-out_1_1. Training starts soon. 
+2024-07-25 11:38:51,476 - INFO - Built a new model: models/ElecUseShortTermPredictor-None-in_24_1-out_1_1.pth. 
+2024-07-25 11:38:51,476 - INFO - Built a new model: models/ElecUseShortTermPredictor-None-in_24_1-out_1_1.pth. 
+2024-07-25 11:38:55,092 - INFO - start_training for ElecUseShortTermPredictor-None-in_24_1-out_1_1. 
+2024-07-25 11:38:55,092 - INFO - start_training for ElecUseShortTermPredictor-None-in_24_1-out_1_1. 
+2024-07-25 11:38:56,147 - INFO - Epoch 1/50, Loss: 0.1191, Validation Loss: 0.0866, MAE Error Percentage: 47.34 %
+2024-07-25 11:38:57,000 - INFO - Epoch 2/50, Loss: 0.0874, Validation Loss: 0.0800, MAE Error Percentage: 46.07 %
+2024-07-25 11:38:57,870 - INFO - Epoch 3/50, Loss: 0.0850, Validation Loss: 0.0758, MAE Error Percentage: 45.03 %
+2024-07-25 11:38:58,728 - INFO - Epoch 4/50, Loss: 0.0854, Validation Loss: 0.0754, MAE Error Percentage: 44.87 %
+2024-07-25 11:38:59,672 - INFO - Epoch 5/50, Loss: 0.0849, Validation Loss: 0.0753, MAE Error Percentage: 44.79 %
+2024-07-25 11:39:00,554 - INFO - Epoch 6/50, Loss: 0.0850, Validation Loss: 0.0764, MAE Error Percentage: 45.24 %
+2024-07-25 11:39:01,429 - INFO - Epoch 7/50, Loss: 0.0845, Validation Loss: 0.0792, MAE Error Percentage: 45.89 %
+2024-07-25 11:39:02,306 - INFO - Epoch 8/50, Loss: 0.0849, Validation Loss: 0.0757, MAE Error Percentage: 44.98 %
+2024-07-25 11:39:03,192 - INFO - Epoch 9/50, Loss: 0.0849, Validation Loss: 0.0759, MAE Error Percentage: 45.08 %
+2024-07-25 11:39:04,100 - INFO - Epoch 10/50, Loss: 0.0849, Validation Loss: 0.0755, MAE Error Percentage: 44.90 %
+2024-07-25 11:39:05,100 - INFO - Epoch 11/50, Loss: 0.0839, Validation Loss: 0.0756, MAE Error Percentage: 44.97 %
+2024-07-25 11:39:06,022 - INFO - Epoch 12/50, Loss: 0.0816, Validation Loss: 0.0757, MAE Error Percentage: 45.00 %
+2024-07-25 11:39:07,145 - INFO - Epoch 13/50, Loss: 0.0843, Validation Loss: 0.0781, MAE Error Percentage: 45.66 %
+2024-07-25 11:39:08,061 - INFO - Epoch 14/50, Loss: 0.0836, Validation Loss: 0.0760, MAE Error Percentage: 45.12 %
+2024-07-25 11:39:10,327 - INFO - Epoch 15/50, Loss: 0.0829, Validation Loss: 0.0770, MAE Error Percentage: 45.40 %
+2024-07-25 11:39:10,328 - INFO - Epoch 15/50, Final Model MAE Error Percentage: 44.79 %
+2024-07-25 11:39:10,328 - INFO - Training done. Model saved. 
+
+2024-07-25 11:39:10,328 - INFO - Training done. Model saved. 
+
+2024-07-25 11:39:10,328 - INFO - Data processing for ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_1_1-in_24_1-out_1_1. Training starts soon. 
+2024-07-25 11:39:10,361 - INFO - Built a new model: models/ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_1_1-in_24_1-out_1_1.pth. 
+2024-07-25 11:39:10,362 - INFO - Built a new model: models/ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_1_1-in_24_1-out_1_1.pth. 
+2024-07-25 11:39:10,363 - INFO - start_training for ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_1_1-in_24_1-out_1_1. 
+2024-07-25 11:39:10,364 - INFO - start_training for ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_1_1-in_24_1-out_1_1. 
+2024-07-25 11:39:11,290 - INFO - Epoch 1/50, Loss: 0.0857, Validation Loss: 0.0843, MAE Error Percentage: 51.13 %
+2024-07-25 11:39:12,344 - INFO - Epoch 2/50, Loss: 0.0849, Validation Loss: 0.0841, MAE Error Percentage: 51.14 %
+2024-07-25 11:39:13,241 - INFO - Epoch 3/50, Loss: 0.0858, Validation Loss: 0.0843, MAE Error Percentage: 51.30 %
+2024-07-25 11:39:14,161 - INFO - Epoch 4/50, Loss: 0.0844, Validation Loss: 0.0843, MAE Error Percentage: 51.13 %
+2024-07-25 11:39:15,052 - INFO - Epoch 5/50, Loss: 0.0851, Validation Loss: 0.0842, MAE Error Percentage: 51.25 %
+2024-07-25 11:39:15,904 - INFO - Epoch 6/50, Loss: 0.0838, Validation Loss: 0.0864, MAE Error Percentage: 51.77 %
+2024-07-25 11:39:16,768 - INFO - Epoch 7/50, Loss: 0.0839, Validation Loss: 0.0842, MAE Error Percentage: 51.24 %
+2024-07-25 11:39:17,599 - INFO - Epoch 8/50, Loss: 0.0840, Validation Loss: 0.0848, MAE Error Percentage: 51.46 %
+2024-07-25 11:39:18,436 - INFO - Epoch 9/50, Loss: 0.0836, Validation Loss: 0.0845, MAE Error Percentage: 51.38 %
+2024-07-25 11:39:19,256 - INFO - Epoch 10/50, Loss: 0.0846, Validation Loss: 0.0842, MAE Error Percentage: 51.24 %
+2024-07-25 11:39:20,083 - INFO - Epoch 11/50, Loss: 0.0835, Validation Loss: 0.0845, MAE Error Percentage: 51.36 %
+2024-07-25 11:39:20,926 - INFO - Epoch 12/50, Loss: 0.0838, Validation Loss: 0.0844, MAE Error Percentage: 51.34 %
+2024-07-25 11:39:20,927 - INFO - Epoch 12/50, Final Model MAE Error Percentage: 51.14 %
+2024-07-25 11:39:20,927 - INFO - Training done. Model saved. 
+
+2024-07-25 11:39:20,927 - INFO - Training done. Model saved. 
+
+2024-07-25 11:39:20,928 - INFO - Data processing for ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_1_1-in_24_1-out_1_1-in_24_1-out_1_1. Training starts soon. 
+2024-07-25 11:39:20,948 - INFO - Built a new model: models/ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_1_1-in_24_1-out_1_1-in_24_1-out_1_1.pth. 
+2024-07-25 11:39:20,948 - INFO - Built a new model: models/ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_1_1-in_24_1-out_1_1-in_24_1-out_1_1.pth. 
+2024-07-25 11:39:20,949 - INFO - start_training for ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_1_1-in_24_1-out_1_1-in_24_1-out_1_1. 
+2024-07-25 11:39:20,950 - INFO - start_training for ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_1_1-in_24_1-out_1_1-in_24_1-out_1_1. 
+2024-07-25 11:39:21,779 - INFO - Epoch 1/50, Loss: 0.0853, Validation Loss: 0.0821, MAE Error Percentage: 47.18 %
+2024-07-25 11:39:22,868 - INFO - Epoch 2/50, Loss: 0.0834, Validation Loss: 0.0818, MAE Error Percentage: 47.14 %
+2024-07-25 11:39:23,732 - INFO - Epoch 3/50, Loss: 0.0843, Validation Loss: 0.0809, MAE Error Percentage: 47.03 %
+2024-07-25 11:39:24,614 - INFO - Epoch 4/50, Loss: 0.0838, Validation Loss: 0.0810, MAE Error Percentage: 47.03 %
+2024-07-25 11:39:25,485 - INFO - Epoch 5/50, Loss: 0.0828, Validation Loss: 0.0810, MAE Error Percentage: 47.04 %
+2024-07-25 11:39:26,357 - INFO - Epoch 6/50, Loss: 0.0837, Validation Loss: 0.0816, MAE Error Percentage: 47.12 %
+2024-07-25 11:39:27,215 - INFO - Epoch 7/50, Loss: 0.0840, Validation Loss: 0.0823, MAE Error Percentage: 47.24 %
+2024-07-25 11:39:28,051 - INFO - Epoch 8/50, Loss: 0.0829, Validation Loss: 0.0828, MAE Error Percentage: 47.31 %
+2024-07-25 11:39:29,114 - INFO - Epoch 9/50, Loss: 0.0836, Validation Loss: 0.0809, MAE Error Percentage: 47.03 %
+2024-07-25 11:39:30,010 - INFO - Epoch 10/50, Loss: 0.0831, Validation Loss: 0.0816, MAE Error Percentage: 47.11 %
+2024-07-25 11:39:30,943 - INFO - Epoch 11/50, Loss: 0.0832, Validation Loss: 0.0816, MAE Error Percentage: 47.12 %
+2024-07-25 11:39:31,782 - INFO - Epoch 12/50, Loss: 0.0839, Validation Loss: 0.0820, MAE Error Percentage: 47.19 %
+2024-07-25 11:39:32,617 - INFO - Epoch 13/50, Loss: 0.0828, Validation Loss: 0.0811, MAE Error Percentage: 47.07 %
+2024-07-25 11:39:32,617 - INFO - Epoch 13/50, Final Model MAE Error Percentage: 47.03 %
+2024-07-25 11:39:32,617 - INFO - Training done. Model saved. 
+
+2024-07-25 11:39:32,617 - INFO - Training done. Model saved. 
+
+2024-07-25 11:40:11,122 - INFO - Data processing for ElecUseShortTermPredictor-None-in_24_1-out_3_1. Training starts soon. 
+2024-07-25 11:40:11,153 - INFO - Built a new model: models/ElecUseShortTermPredictor-None-in_24_1-out_3_1.pth. 
+2024-07-25 11:40:11,154 - INFO - Built a new model: models/ElecUseShortTermPredictor-None-in_24_1-out_3_1.pth. 
+2024-07-25 11:40:14,337 - INFO - start_training for ElecUseShortTermPredictor-None-in_24_1-out_3_1. 
+2024-07-25 11:40:14,337 - INFO - start_training for ElecUseShortTermPredictor-None-in_24_1-out_3_1. 
+2024-07-25 11:40:15,349 - INFO - Epoch 1/50, Loss: 0.1066, Validation Loss: 0.0810, MAE Error Percentage: 48.66 %
+2024-07-25 11:40:16,198 - INFO - Epoch 2/50, Loss: 0.0850, Validation Loss: 0.0792, MAE Error Percentage: 48.20 %
+2024-07-25 11:40:17,205 - INFO - Epoch 3/50, Loss: 0.0843, Validation Loss: 0.0785, MAE Error Percentage: 48.03 %
+2024-07-25 11:40:18,102 - INFO - Epoch 4/50, Loss: 0.0842, Validation Loss: 0.0780, MAE Error Percentage: 47.87 %
+2024-07-25 11:40:18,997 - INFO - Epoch 5/50, Loss: 0.0838, Validation Loss: 0.0784, MAE Error Percentage: 48.00 %
+2024-07-25 11:40:19,877 - INFO - Epoch 6/50, Loss: 0.0832, Validation Loss: 0.0781, MAE Error Percentage: 47.92 %
+2024-07-25 11:40:20,759 - INFO - Epoch 7/50, Loss: 0.0837, Validation Loss: 0.0787, MAE Error Percentage: 48.09 %
+2024-07-25 11:40:21,933 - INFO - Epoch 8/50, Loss: 0.0841, Validation Loss: 0.0783, MAE Error Percentage: 47.97 %
+2024-07-25 11:40:22,799 - INFO - Epoch 9/50, Loss: 0.0836, Validation Loss: 0.0780, MAE Error Percentage: 47.90 %
+2024-07-25 11:40:23,639 - INFO - Epoch 10/50, Loss: 0.0832, Validation Loss: 0.0782, MAE Error Percentage: 47.96 %
+2024-07-25 11:40:24,484 - INFO - Epoch 11/50, Loss: 0.0838, Validation Loss: 0.0800, MAE Error Percentage: 48.44 %
+2024-07-25 11:40:25,350 - INFO - Epoch 12/50, Loss: 0.0831, Validation Loss: 0.0793, MAE Error Percentage: 48.26 %
+2024-07-25 11:40:26,190 - INFO - Epoch 13/50, Loss: 0.0832, Validation Loss: 0.0779, MAE Error Percentage: 47.85 %
+2024-07-25 11:40:27,049 - INFO - Epoch 14/50, Loss: 0.0832, Validation Loss: 0.0778, MAE Error Percentage: 47.70 %
+2024-07-25 11:40:27,902 - INFO - Epoch 15/50, Loss: 0.0833, Validation Loss: 0.0778, MAE Error Percentage: 47.80 %
+2024-07-25 11:40:28,883 - INFO - Epoch 16/50, Loss: 0.0828, Validation Loss: 0.0780, MAE Error Percentage: 47.88 %
+2024-07-25 11:40:29,916 - INFO - Epoch 17/50, Loss: 0.0825, Validation Loss: 0.0782, MAE Error Percentage: 47.94 %
+2024-07-25 11:40:30,801 - INFO - Epoch 18/50, Loss: 0.0832, Validation Loss: 0.0784, MAE Error Percentage: 48.01 %
+2024-07-25 11:40:31,673 - INFO - Epoch 19/50, Loss: 0.0829, Validation Loss: 0.0777, MAE Error Percentage: 47.80 %
+2024-07-25 11:40:32,526 - INFO - Epoch 20/50, Loss: 0.0824, Validation Loss: 0.0781, MAE Error Percentage: 47.91 %
+2024-07-25 11:40:33,390 - INFO - Epoch 21/50, Loss: 0.0825, Validation Loss: 0.0782, MAE Error Percentage: 47.97 %
+2024-07-25 11:40:34,296 - INFO - Epoch 22/50, Loss: 0.0824, Validation Loss: 0.0782, MAE Error Percentage: 47.95 %
+2024-07-25 11:40:35,142 - INFO - Epoch 23/50, Loss: 0.0824, Validation Loss: 0.0787, MAE Error Percentage: 48.09 %
+2024-07-25 11:40:36,044 - INFO - Epoch 24/50, Loss: 0.0824, Validation Loss: 0.0783, MAE Error Percentage: 48.00 %
+2024-07-25 11:40:36,910 - INFO - Epoch 25/50, Loss: 0.0821, Validation Loss: 0.0780, MAE Error Percentage: 47.88 %
+2024-07-25 11:40:37,736 - INFO - Epoch 26/50, Loss: 0.0824, Validation Loss: 0.0782, MAE Error Percentage: 47.95 %
+2024-07-25 11:40:38,564 - INFO - Epoch 27/50, Loss: 0.0826, Validation Loss: 0.0779, MAE Error Percentage: 47.87 %
+2024-07-25 11:40:39,397 - INFO - Epoch 28/50, Loss: 0.0822, Validation Loss: 0.0776, MAE Error Percentage: 47.75 %
+2024-07-25 11:40:40,237 - INFO - Epoch 29/50, Loss: 0.0819, Validation Loss: 0.0776, MAE Error Percentage: 47.73 %
+2024-07-25 11:40:41,084 - INFO - Epoch 30/50, Loss: 0.0829, Validation Loss: 0.0776, MAE Error Percentage: 47.76 %
+2024-07-25 11:40:41,984 - INFO - Epoch 31/50, Loss: 0.0823, Validation Loss: 0.0778, MAE Error Percentage: 47.82 %
+2024-07-25 11:40:42,847 - INFO - Epoch 32/50, Loss: 0.0822, Validation Loss: 0.0778, MAE Error Percentage: 47.83 %
+2024-07-25 11:40:43,722 - INFO - Epoch 33/50, Loss: 0.0822, Validation Loss: 0.0779, MAE Error Percentage: 47.85 %
+2024-07-25 11:40:44,634 - INFO - Epoch 34/50, Loss: 0.0824, Validation Loss: 0.0781, MAE Error Percentage: 47.92 %
+2024-07-25 11:40:45,541 - INFO - Epoch 35/50, Loss: 0.0824, Validation Loss: 0.0779, MAE Error Percentage: 47.87 %
+2024-07-25 11:40:46,449 - INFO - Epoch 36/50, Loss: 0.0822, Validation Loss: 0.0778, MAE Error Percentage: 47.83 %
+2024-07-25 11:40:47,306 - INFO - Epoch 37/50, Loss: 0.0821, Validation Loss: 0.0781, MAE Error Percentage: 47.92 %
+2024-07-25 11:40:48,146 - INFO - Epoch 38/50, Loss: 0.0818, Validation Loss: 0.0781, MAE Error Percentage: 47.93 %
+2024-07-25 11:40:48,990 - INFO - Epoch 39/50, Loss: 0.0821, Validation Loss: 0.0776, MAE Error Percentage: 47.75 %
+2024-07-25 11:40:49,829 - INFO - Epoch 40/50, Loss: 0.0818, Validation Loss: 0.0777, MAE Error Percentage: 47.81 %
+2024-07-25 11:40:50,677 - INFO - Epoch 41/50, Loss: 0.0820, Validation Loss: 0.0778, MAE Error Percentage: 47.83 %
+2024-07-25 11:40:51,555 - INFO - Epoch 42/50, Loss: 0.0819, Validation Loss: 0.0782, MAE Error Percentage: 47.97 %
+2024-07-25 11:40:52,408 - INFO - Epoch 43/50, Loss: 0.0820, Validation Loss: 0.0777, MAE Error Percentage: 47.81 %
+2024-07-25 11:40:53,351 - INFO - Epoch 44/50, Loss: 0.0815, Validation Loss: 0.0783, MAE Error Percentage: 47.99 %
+2024-07-25 11:40:54,234 - INFO - Epoch 45/50, Loss: 0.0821, Validation Loss: 0.0779, MAE Error Percentage: 47.85 %
+2024-07-25 11:40:55,063 - INFO - Epoch 46/50, Loss: 0.0816, Validation Loss: 0.0777, MAE Error Percentage: 47.79 %
+2024-07-25 11:40:55,916 - INFO - Epoch 47/50, Loss: 0.0816, Validation Loss: 0.0783, MAE Error Percentage: 47.98 %
+2024-07-25 11:40:56,815 - INFO - Epoch 48/50, Loss: 0.0817, Validation Loss: 0.0776, MAE Error Percentage: 47.75 %
+2024-07-25 11:40:57,698 - INFO - Epoch 49/50, Loss: 0.0818, Validation Loss: 0.0777, MAE Error Percentage: 47.79 %
+2024-07-25 11:40:57,699 - INFO - Epoch 49/50, Final Model MAE Error Percentage: 47.75 %
+2024-07-25 11:40:57,699 - INFO - Training done. Model saved. 
+
+2024-07-25 11:40:57,699 - INFO - Training done. Model saved. 
+
+2024-07-25 11:40:57,700 - INFO - Data processing for ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_3_1-in_24_1-out_3_1. Training starts soon. 
+2024-07-25 11:40:57,726 - INFO - Built a new model: models/ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_3_1-in_24_1-out_3_1.pth. 
+2024-07-25 11:40:57,727 - INFO - Built a new model: models/ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_3_1-in_24_1-out_3_1.pth. 
+2024-07-25 11:40:57,729 - INFO - start_training for ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_3_1-in_24_1-out_3_1. 
+2024-07-25 11:40:57,730 - INFO - start_training for ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_3_1-in_24_1-out_3_1. 
+2024-07-25 11:40:58,675 - INFO - Epoch 1/50, Loss: 0.0860, Validation Loss: 0.0854, MAE Error Percentage: 47.26 %
+2024-07-25 11:40:59,670 - INFO - Epoch 2/50, Loss: 0.0861, Validation Loss: 0.0843, MAE Error Percentage: 47.16 %
+2024-07-25 11:41:00,669 - INFO - Epoch 3/50, Loss: 0.0857, Validation Loss: 0.0843, MAE Error Percentage: 47.15 %
+2024-07-25 11:41:01,662 - INFO - Epoch 4/50, Loss: 0.0860, Validation Loss: 0.0839, MAE Error Percentage: 47.12 %
+2024-07-25 11:41:02,625 - INFO - Epoch 5/50, Loss: 0.0860, Validation Loss: 0.0848, MAE Error Percentage: 47.17 %
+2024-07-25 11:41:03,488 - INFO - Epoch 6/50, Loss: 0.0856, Validation Loss: 0.0844, MAE Error Percentage: 47.15 %
+2024-07-25 11:41:04,406 - INFO - Epoch 7/50, Loss: 0.0860, Validation Loss: 0.0847, MAE Error Percentage: 47.19 %
+2024-07-25 11:41:05,479 - INFO - Epoch 8/50, Loss: 0.0862, Validation Loss: 0.0844, MAE Error Percentage: 47.15 %
+2024-07-25 11:41:06,501 - INFO - Epoch 9/50, Loss: 0.0861, Validation Loss: 0.0851, MAE Error Percentage: 47.26 %
+2024-07-25 11:41:07,447 - INFO - Epoch 10/50, Loss: 0.0861, Validation Loss: 0.0843, MAE Error Percentage: 47.18 %
+2024-07-25 11:41:08,347 - INFO - Epoch 11/50, Loss: 0.0858, Validation Loss: 0.0842, MAE Error Percentage: 47.12 %
+2024-07-25 11:41:09,334 - INFO - Epoch 12/50, Loss: 0.0857, Validation Loss: 0.0837, MAE Error Percentage: 47.09 %
+2024-07-25 11:41:10,388 - INFO - Epoch 13/50, Loss: 0.0860, Validation Loss: 0.0838, MAE Error Percentage: 47.11 %
+2024-07-25 11:41:11,396 - INFO - Epoch 14/50, Loss: 0.0856, Validation Loss: 0.0839, MAE Error Percentage: 47.10 %
+2024-07-25 11:41:12,296 - INFO - Epoch 15/50, Loss: 0.0857, Validation Loss: 0.0843, MAE Error Percentage: 47.12 %
+2024-07-25 11:41:13,135 - INFO - Epoch 16/50, Loss: 0.0855, Validation Loss: 0.0841, MAE Error Percentage: 47.11 %
+2024-07-25 11:41:13,981 - INFO - Epoch 17/50, Loss: 0.0858, Validation Loss: 0.0837, MAE Error Percentage: 47.10 %
+2024-07-25 11:41:15,060 - INFO - Epoch 18/50, Loss: 0.0858, Validation Loss: 0.0845, MAE Error Percentage: 47.13 %
+2024-07-25 11:41:16,034 - INFO - Epoch 19/50, Loss: 0.0857, Validation Loss: 0.0846, MAE Error Percentage: 47.17 %
+2024-07-25 11:41:17,081 - INFO - Epoch 20/50, Loss: 0.0855, Validation Loss: 0.0846, MAE Error Percentage: 47.14 %
+2024-07-25 11:41:17,950 - INFO - Epoch 21/50, Loss: 0.0858, Validation Loss: 0.0849, MAE Error Percentage: 47.20 %
+2024-07-25 11:41:18,799 - INFO - Epoch 22/50, Loss: 0.0856, Validation Loss: 0.0839, MAE Error Percentage: 47.04 %
+2024-07-25 11:41:19,625 - INFO - Epoch 23/50, Loss: 0.0853, Validation Loss: 0.0839, MAE Error Percentage: 47.04 %
+2024-07-25 11:41:20,487 - INFO - Epoch 24/50, Loss: 0.0852, Validation Loss: 0.0849, MAE Error Percentage: 47.19 %
+2024-07-25 11:41:21,334 - INFO - Epoch 25/50, Loss: 0.0856, Validation Loss: 0.0848, MAE Error Percentage: 47.17 %
+2024-07-25 11:41:22,161 - INFO - Epoch 26/50, Loss: 0.0857, Validation Loss: 0.0842, MAE Error Percentage: 47.09 %
+2024-07-25 11:41:23,006 - INFO - Epoch 27/50, Loss: 0.0854, Validation Loss: 0.0844, MAE Error Percentage: 47.16 %
+2024-07-25 11:41:23,006 - INFO - Epoch 27/50, Final Model MAE Error Percentage: 47.10 %
+2024-07-25 11:41:23,006 - INFO - Training done. Model saved. 
+
+2024-07-25 11:41:23,006 - INFO - Training done. Model saved. 
+
+2024-07-25 11:41:23,007 - INFO - Data processing for ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_3_1-in_24_1-out_3_1-in_24_1-out_3_1. Training starts soon. 
+2024-07-25 11:41:23,033 - INFO - Built a new model: models/ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_3_1-in_24_1-out_3_1-in_24_1-out_3_1.pth. 
+2024-07-25 11:41:23,034 - INFO - Built a new model: models/ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_3_1-in_24_1-out_3_1-in_24_1-out_3_1.pth. 
+2024-07-25 11:41:23,035 - INFO - start_training for ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_3_1-in_24_1-out_3_1-in_24_1-out_3_1. 
+2024-07-25 11:41:23,035 - INFO - start_training for ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_3_1-in_24_1-out_3_1-in_24_1-out_3_1. 
+2024-07-25 11:41:23,871 - INFO - Epoch 1/50, Loss: 0.0799, Validation Loss: 0.0738, MAE Error Percentage: 46.37 %
+2024-07-25 11:41:24,745 - INFO - Epoch 2/50, Loss: 0.0801, Validation Loss: 0.0738, MAE Error Percentage: 46.36 %
+2024-07-25 11:41:25,601 - INFO - Epoch 3/50, Loss: 0.0800, Validation Loss: 0.0738, MAE Error Percentage: 46.37 %
+2024-07-25 11:41:26,442 - INFO - Epoch 4/50, Loss: 0.0798, Validation Loss: 0.0738, MAE Error Percentage: 46.37 %
+2024-07-25 11:41:27,303 - INFO - Epoch 5/50, Loss: 0.0796, Validation Loss: 0.0739, MAE Error Percentage: 46.38 %
+2024-07-25 11:41:28,207 - INFO - Epoch 6/50, Loss: 0.0798, Validation Loss: 0.0738, MAE Error Percentage: 46.37 %
+2024-07-25 11:41:29,171 - INFO - Epoch 7/50, Loss: 0.0796, Validation Loss: 0.0738, MAE Error Percentage: 46.36 %
+2024-07-25 11:41:30,113 - INFO - Epoch 8/50, Loss: 0.0798, Validation Loss: 0.0739, MAE Error Percentage: 46.39 %
+2024-07-25 11:41:30,984 - INFO - Epoch 9/50, Loss: 0.0796, Validation Loss: 0.0739, MAE Error Percentage: 46.37 %
+2024-07-25 11:41:31,875 - INFO - Epoch 10/50, Loss: 0.0800, Validation Loss: 0.0738, MAE Error Percentage: 46.36 %
+2024-07-25 11:41:32,773 - INFO - Epoch 11/50, Loss: 0.0798, Validation Loss: 0.0739, MAE Error Percentage: 46.40 %
+2024-07-25 11:41:33,638 - INFO - Epoch 12/50, Loss: 0.0798, Validation Loss: 0.0738, MAE Error Percentage: 46.34 %
+2024-07-25 11:41:34,573 - INFO - Epoch 13/50, Loss: 0.0798, Validation Loss: 0.0738, MAE Error Percentage: 46.34 %
+2024-07-25 11:41:35,425 - INFO - Epoch 14/50, Loss: 0.0798, Validation Loss: 0.0738, MAE Error Percentage: 46.35 %
+2024-07-25 11:41:36,282 - INFO - Epoch 15/50, Loss: 0.0795, Validation Loss: 0.0739, MAE Error Percentage: 46.35 %
+2024-07-25 11:41:37,135 - INFO - Epoch 16/50, Loss: 0.0796, Validation Loss: 0.0738, MAE Error Percentage: 46.33 %
+2024-07-25 11:41:37,999 - INFO - Epoch 17/50, Loss: 0.0799, Validation Loss: 0.0738, MAE Error Percentage: 46.28 %
+2024-07-25 11:41:39,196 - INFO - Epoch 18/50, Loss: 0.0795, Validation Loss: 0.0738, MAE Error Percentage: 46.26 %
+2024-07-25 11:41:40,496 - INFO - Epoch 19/50, Loss: 0.0795, Validation Loss: 0.0739, MAE Error Percentage: 46.30 %
+2024-07-25 11:41:41,413 - INFO - Epoch 20/50, Loss: 0.0794, Validation Loss: 0.0741, MAE Error Percentage: 46.30 %
+2024-07-25 11:41:42,620 - INFO - Epoch 21/50, Loss: 0.0797, Validation Loss: 0.0738, MAE Error Percentage: 46.35 %
+2024-07-25 11:41:44,018 - INFO - Epoch 22/50, Loss: 0.0793, Validation Loss: 0.0739, MAE Error Percentage: 46.37 %
+2024-07-25 11:41:45,260 - INFO - Epoch 23/50, Loss: 0.0799, Validation Loss: 0.0738, MAE Error Percentage: 46.37 %
+2024-07-25 11:41:45,261 - INFO - Epoch 23/50, Final Model MAE Error Percentage: 46.34 %
+2024-07-25 11:41:45,261 - INFO - Training done. Model saved. 
+
+2024-07-25 11:41:45,261 - INFO - Training done. Model saved. 
+
+2024-07-25 11:41:45,261 - INFO - Data processing for ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_3_1-in_24_1-out_3_1-in_24_1-out_3_1-in_24_1-out_3_1. Training starts soon. 
+2024-07-25 11:41:45,290 - INFO - Built a new model: models/ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_3_1-in_24_1-out_3_1-in_24_1-out_3_1-in_24_1-out_3_1.pth. 
+2024-07-25 11:41:45,291 - INFO - Built a new model: models/ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_3_1-in_24_1-out_3_1-in_24_1-out_3_1-in_24_1-out_3_1.pth. 
+2024-07-25 11:41:45,294 - INFO - start_training for ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_3_1-in_24_1-out_3_1-in_24_1-out_3_1-in_24_1-out_3_1. 
+2024-07-25 11:41:45,294 - INFO - start_training for ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_3_1-in_24_1-out_3_1-in_24_1-out_3_1-in_24_1-out_3_1. 
+2024-07-25 11:41:46,301 - INFO - Epoch 1/50, Loss: 0.0839, Validation Loss: 0.0835, MAE Error Percentage: 48.19 %
+2024-07-25 11:41:47,192 - INFO - Epoch 2/50, Loss: 0.0843, Validation Loss: 0.0839, MAE Error Percentage: 48.22 %
+2024-07-25 11:41:48,016 - INFO - Epoch 3/50, Loss: 0.0841, Validation Loss: 0.0837, MAE Error Percentage: 48.19 %
+2024-07-25 11:41:48,862 - INFO - Epoch 4/50, Loss: 0.0841, Validation Loss: 0.0836, MAE Error Percentage: 48.16 %
+2024-07-25 11:41:49,710 - INFO - Epoch 5/50, Loss: 0.0840, Validation Loss: 0.0844, MAE Error Percentage: 48.32 %
+2024-07-25 11:41:50,537 - INFO - Epoch 6/50, Loss: 0.0840, Validation Loss: 0.0836, MAE Error Percentage: 48.17 %
+2024-07-25 11:41:51,405 - INFO - Epoch 7/50, Loss: 0.0838, Validation Loss: 0.0837, MAE Error Percentage: 48.22 %
+2024-07-25 11:41:52,233 - INFO - Epoch 8/50, Loss: 0.0840, Validation Loss: 0.0835, MAE Error Percentage: 48.15 %
+2024-07-25 11:41:53,068 - INFO - Epoch 9/50, Loss: 0.0839, Validation Loss: 0.0834, MAE Error Percentage: 48.14 %
+2024-07-25 11:41:54,375 - INFO - Epoch 10/50, Loss: 0.0842, Validation Loss: 0.0841, MAE Error Percentage: 48.26 %
+2024-07-25 11:41:55,617 - INFO - Epoch 11/50, Loss: 0.0841, Validation Loss: 0.0839, MAE Error Percentage: 48.23 %
+2024-07-25 11:41:56,503 - INFO - Epoch 12/50, Loss: 0.0839, Validation Loss: 0.0836, MAE Error Percentage: 48.15 %
+2024-07-25 11:41:57,530 - INFO - Epoch 13/50, Loss: 0.0836, Validation Loss: 0.0834, MAE Error Percentage: 48.11 %
+2024-07-25 11:41:58,469 - INFO - Epoch 14/50, Loss: 0.0839, Validation Loss: 0.0836, MAE Error Percentage: 48.18 %
+2024-07-25 11:41:59,335 - INFO - Epoch 15/50, Loss: 0.0837, Validation Loss: 0.0837, MAE Error Percentage: 48.15 %
+2024-07-25 11:42:00,411 - INFO - Epoch 16/50, Loss: 0.0839, Validation Loss: 0.0835, MAE Error Percentage: 48.17 %
+2024-07-25 11:42:01,394 - INFO - Epoch 17/50, Loss: 0.0839, Validation Loss: 0.0835, MAE Error Percentage: 48.19 %
+2024-07-25 11:42:02,366 - INFO - Epoch 18/50, Loss: 0.0841, Validation Loss: 0.0835, MAE Error Percentage: 48.14 %
+2024-07-25 11:42:03,208 - INFO - Epoch 19/50, Loss: 0.0839, Validation Loss: 0.0835, MAE Error Percentage: 48.20 %
+2024-07-25 11:42:04,060 - INFO - Epoch 20/50, Loss: 0.0840, Validation Loss: 0.0832, MAE Error Percentage: 48.09 %
+2024-07-25 11:42:04,898 - INFO - Epoch 21/50, Loss: 0.0838, Validation Loss: 0.0836, MAE Error Percentage: 48.16 %
+2024-07-25 11:42:05,820 - INFO - Epoch 22/50, Loss: 0.0837, Validation Loss: 0.0838, MAE Error Percentage: 48.24 %
+2024-07-25 11:42:06,752 - INFO - Epoch 23/50, Loss: 0.0840, Validation Loss: 0.0843, MAE Error Percentage: 48.35 %
+2024-07-25 11:42:07,814 - INFO - Epoch 24/50, Loss: 0.0837, Validation Loss: 0.0835, MAE Error Percentage: 48.12 %
+2024-07-25 11:42:08,881 - INFO - Epoch 25/50, Loss: 0.0842, Validation Loss: 0.0838, MAE Error Percentage: 48.19 %
+2024-07-25 11:42:09,903 - INFO - Epoch 26/50, Loss: 0.0840, Validation Loss: 0.0837, MAE Error Percentage: 48.18 %
+2024-07-25 11:42:10,803 - INFO - Epoch 27/50, Loss: 0.0838, Validation Loss: 0.0833, MAE Error Percentage: 48.08 %
+2024-07-25 11:42:11,771 - INFO - Epoch 28/50, Loss: 0.0838, Validation Loss: 0.0838, MAE Error Percentage: 48.18 %
+2024-07-25 11:42:12,828 - INFO - Epoch 29/50, Loss: 0.0837, Validation Loss: 0.0841, MAE Error Percentage: 48.24 %
+2024-07-25 11:42:13,784 - INFO - Epoch 30/50, Loss: 0.0836, Validation Loss: 0.0837, MAE Error Percentage: 48.21 %
+2024-07-25 11:42:13,785 - INFO - Epoch 30/50, Final Model MAE Error Percentage: 48.09 %
+2024-07-25 11:42:13,785 - INFO - Training done. Model saved. 
+
+2024-07-25 11:42:13,785 - INFO - Training done. Model saved. 
+
+2024-07-25 11:42:13,785 - INFO - Data processing for ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-ElecUseShortTermPredictor-None-in_24_1-out_3_1-in_24_1-out_3_1-in_24_1-out_3_1-in_24_1-out_3_1-in_24_1-out_3_1. Training starts soon. 
+2024-07-25 12:10:53,163 - INFO - Data processing for ElecUseShortTermPredictor-test1-Pt-in_24_1-out_1_1. Training starts soon. 
+2024-07-25 12:10:53,185 - INFO - Built a new model: models/ElecUseShortTermPredictor-test1-Pt-in_24_1-out_1_1.pth. 
+2024-07-25 12:10:53,186 - INFO - Built a new model: models/ElecUseShortTermPredictor-test1-Pt-in_24_1-out_1_1.pth. 
+2024-07-25 12:10:57,379 - INFO - start_training for ElecUseShortTermPredictor-test1-Pt-in_24_1-out_1_1. 
+2024-07-25 12:10:57,380 - INFO - start_training for ElecUseShortTermPredictor-test1-Pt-in_24_1-out_1_1. 
+2024-07-25 12:10:58,319 - INFO - Epoch 1/50, Loss: 0.1172, Validation Loss: 0.0836, MAE Error Percentage: 50.82 %
+2024-07-25 12:10:59,188 - INFO - Epoch 2/50, Loss: 0.0863, Validation Loss: 0.0833, MAE Error Percentage: 51.11 %
+2024-07-25 12:11:00,127 - INFO - Epoch 3/50, Loss: 0.0837, Validation Loss: 0.0843, MAE Error Percentage: 51.63 %
+2024-07-25 12:11:01,026 - INFO - Epoch 4/50, Loss: 0.0843, Validation Loss: 0.0838, MAE Error Percentage: 50.82 %
+2024-07-25 12:11:01,871 - INFO - Epoch 5/50, Loss: 0.0845, Validation Loss: 0.0833, MAE Error Percentage: 50.87 %
+2024-07-25 12:11:02,788 - INFO - Epoch 6/50, Loss: 0.0841, Validation Loss: 0.0847, MAE Error Percentage: 50.84 %
+2024-07-25 12:11:03,683 - INFO - Epoch 7/50, Loss: 0.0857, Validation Loss: 0.0833, MAE Error Percentage: 50.88 %
+2024-07-25 12:11:04,578 - INFO - Epoch 8/50, Loss: 0.0845, Validation Loss: 0.0836, MAE Error Percentage: 50.83 %
+2024-07-25 12:11:05,450 - INFO - Epoch 9/50, Loss: 0.0831, Validation Loss: 0.0836, MAE Error Percentage: 50.83 %
+2024-07-25 12:11:06,337 - INFO - Epoch 10/50, Loss: 0.0829, Validation Loss: 0.0833, MAE Error Percentage: 51.00 %
+2024-07-25 12:11:07,243 - INFO - Epoch 11/50, Loss: 0.0841, Validation Loss: 0.0837, MAE Error Percentage: 50.82 %
+2024-07-25 12:11:08,103 - INFO - Epoch 12/50, Loss: 0.0842, Validation Loss: 0.0833, MAE Error Percentage: 50.91 %
+2024-07-25 12:11:08,987 - INFO - Epoch 13/50, Loss: 0.0838, Validation Loss: 0.0840, MAE Error Percentage: 51.53 %
+2024-07-25 12:11:11,167 - INFO - Epoch 14/50, Loss: 0.0848, Validation Loss: 0.0832, MAE Error Percentage: 50.95 %
+2024-07-25 12:11:12,175 - INFO - Epoch 15/50, Loss: 0.0828, Validation Loss: 0.0838, MAE Error Percentage: 50.82 %
+2024-07-25 12:11:13,067 - INFO - Epoch 16/50, Loss: 0.0822, Validation Loss: 0.0837, MAE Error Percentage: 51.37 %
+2024-07-25 12:11:13,941 - INFO - Epoch 17/50, Loss: 0.0822, Validation Loss: 0.0833, MAE Error Percentage: 51.01 %
+2024-07-25 12:11:14,786 - INFO - Epoch 18/50, Loss: 0.0842, Validation Loss: 0.0837, MAE Error Percentage: 51.35 %
+2024-07-25 12:11:15,633 - INFO - Epoch 19/50, Loss: 0.0822, Validation Loss: 0.0835, MAE Error Percentage: 50.85 %
+2024-07-25 12:11:16,531 - INFO - Epoch 20/50, Loss: 0.0830, Validation Loss: 0.0832, MAE Error Percentage: 50.96 %
+2024-07-25 12:11:17,404 - INFO - Epoch 21/50, Loss: 0.0835, Validation Loss: 0.0833, MAE Error Percentage: 50.89 %
+2024-07-25 12:11:18,280 - INFO - Epoch 22/50, Loss: 0.0825, Validation Loss: 0.0832, MAE Error Percentage: 50.96 %
+2024-07-25 12:11:19,130 - INFO - Epoch 23/50, Loss: 0.0822, Validation Loss: 0.0833, MAE Error Percentage: 50.89 %
+2024-07-25 12:11:20,008 - INFO - Epoch 24/50, Loss: 0.0827, Validation Loss: 0.0833, MAE Error Percentage: 50.90 %
+2024-07-25 12:11:20,008 - INFO - Epoch 24/50, Final Model MAE Error Percentage: 50.95 %
+2024-07-25 12:11:20,009 - INFO - Training done. Model saved. 
+
+2024-07-25 12:11:20,009 - INFO - Training done. Model saved. 
+
+2024-07-25 12:11:20,009 - INFO - Data processing for ElecUseShortTermPredictor-test2-Pt-in_24_1-out_1_1. Training starts soon. 
+2024-07-25 12:11:20,037 - INFO - Built a new model: models/ElecUseShortTermPredictor-test2-Pt-in_24_1-out_1_1.pth. 
+2024-07-25 12:11:20,037 - INFO - Built a new model: models/ElecUseShortTermPredictor-test2-Pt-in_24_1-out_1_1.pth. 
+2024-07-25 12:11:20,039 - INFO - start_training for ElecUseShortTermPredictor-test2-Pt-in_24_1-out_1_1. 
+2024-07-25 12:11:20,039 - INFO - start_training for ElecUseShortTermPredictor-test2-Pt-in_24_1-out_1_1. 
+2024-07-25 12:11:20,943 - INFO - Epoch 1/50, Loss: 0.0872, Validation Loss: 0.0761, MAE Error Percentage: 50.29 %
+2024-07-25 12:11:21,832 - INFO - Epoch 2/50, Loss: 0.0862, Validation Loss: 0.0776, MAE Error Percentage: 50.42 %
+2024-07-25 12:11:22,711 - INFO - Epoch 3/50, Loss: 0.0860, Validation Loss: 0.0763, MAE Error Percentage: 50.31 %
+2024-07-25 12:11:23,615 - INFO - Epoch 4/50, Loss: 0.0845, Validation Loss: 0.0766, MAE Error Percentage: 50.38 %
+2024-07-25 12:11:24,492 - INFO - Epoch 5/50, Loss: 0.0852, Validation Loss: 0.0763, MAE Error Percentage: 50.32 %
+2024-07-25 12:11:25,388 - INFO - Epoch 6/50, Loss: 0.0859, Validation Loss: 0.0765, MAE Error Percentage: 50.33 %
+2024-07-25 12:11:26,255 - INFO - Epoch 7/50, Loss: 0.0852, Validation Loss: 0.0768, MAE Error Percentage: 50.37 %
+2024-07-25 12:11:27,120 - INFO - Epoch 8/50, Loss: 0.0848, Validation Loss: 0.0762, MAE Error Percentage: 50.31 %
+2024-07-25 12:11:27,988 - INFO - Epoch 9/50, Loss: 0.0847, Validation Loss: 0.0762, MAE Error Percentage: 50.30 %
+2024-07-25 12:11:28,850 - INFO - Epoch 10/50, Loss: 0.0847, Validation Loss: 0.0763, MAE Error Percentage: 50.31 %
+2024-07-25 12:11:29,685 - INFO - Epoch 11/50, Loss: 0.0849, Validation Loss: 0.0764, MAE Error Percentage: 50.32 %
+2024-07-25 12:11:29,686 - INFO - Epoch 11/50, Final Model MAE Error Percentage: 50.29 %
+2024-07-25 12:11:29,686 - INFO - Training done. Model saved. 
+
+2024-07-25 12:11:29,686 - INFO - Training done. Model saved. 
+
+2024-07-25 12:11:29,687 - INFO - Data processing for ElecUseShortTermPredictor-test3-Pt-in_24_1-out_1_1. Training starts soon. 
+2024-07-25 12:11:29,710 - INFO - Built a new model: models/ElecUseShortTermPredictor-test3-Pt-in_24_1-out_1_1.pth. 
+2024-07-25 12:11:29,711 - INFO - Built a new model: models/ElecUseShortTermPredictor-test3-Pt-in_24_1-out_1_1.pth. 
+2024-07-25 12:11:29,712 - INFO - start_training for ElecUseShortTermPredictor-test3-Pt-in_24_1-out_1_1. 
+2024-07-25 12:11:29,713 - INFO - start_training for ElecUseShortTermPredictor-test3-Pt-in_24_1-out_1_1. 
+2024-07-25 12:11:30,613 - INFO - Epoch 1/50, Loss: 0.0835, Validation Loss: 0.0922, MAE Error Percentage: 49.84 %
+2024-07-25 12:11:31,524 - INFO - Epoch 2/50, Loss: 0.0833, Validation Loss: 0.0919, MAE Error Percentage: 49.41 %
+2024-07-25 12:11:32,413 - INFO - Epoch 3/50, Loss: 0.0827, Validation Loss: 0.0923, MAE Error Percentage: 49.89 %
+2024-07-25 12:11:33,265 - INFO - Epoch 4/50, Loss: 0.0834, Validation Loss: 0.0920, MAE Error Percentage: 49.37 %
+2024-07-25 12:11:34,114 - INFO - Epoch 5/50, Loss: 0.0841, Validation Loss: 0.0919, MAE Error Percentage: 49.57 %
+2024-07-25 12:11:35,026 - INFO - Epoch 6/50, Loss: 0.0829, Validation Loss: 0.0920, MAE Error Percentage: 49.59 %
+2024-07-25 12:11:35,913 - INFO - Epoch 7/50, Loss: 0.0825, Validation Loss: 0.0920, MAE Error Percentage: 49.69 %
+2024-07-25 12:11:36,774 - INFO - Epoch 8/50, Loss: 0.0826, Validation Loss: 0.0923, MAE Error Percentage: 49.90 %
+2024-07-25 12:11:37,647 - INFO - Epoch 9/50, Loss: 0.0828, Validation Loss: 0.0921, MAE Error Percentage: 49.37 %
+2024-07-25 12:11:38,560 - INFO - Epoch 10/50, Loss: 0.0826, Validation Loss: 0.0925, MAE Error Percentage: 49.97 %
+2024-07-25 12:11:39,504 - INFO - Epoch 11/50, Loss: 0.0829, Validation Loss: 0.0919, MAE Error Percentage: 49.42 %
+2024-07-25 12:11:40,373 - INFO - Epoch 12/50, Loss: 0.0824, Validation Loss: 0.0920, MAE Error Percentage: 49.68 %
+2024-07-25 12:11:41,942 - INFO - Epoch 13/50, Loss: 0.0823, Validation Loss: 0.0919, MAE Error Percentage: 49.41 %
+2024-07-25 12:11:43,431 - INFO - Epoch 14/50, Loss: 0.0819, Validation Loss: 0.0921, MAE Error Percentage: 49.73 %
+2024-07-25 12:11:44,337 - INFO - Epoch 15/50, Loss: 0.0825, Validation Loss: 0.0923, MAE Error Percentage: 49.89 %
+2024-07-25 12:11:45,285 - INFO - Epoch 16/50, Loss: 0.0830, Validation Loss: 0.0919, MAE Error Percentage: 49.47 %
+2024-07-25 12:11:46,171 - INFO - Epoch 17/50, Loss: 0.0826, Validation Loss: 0.0920, MAE Error Percentage: 49.61 %
+2024-07-25 12:11:47,100 - INFO - Epoch 18/50, Loss: 0.0821, Validation Loss: 0.0919, MAE Error Percentage: 49.45 %
+2024-07-25 12:11:48,100 - INFO - Epoch 19/50, Loss: 0.0818, Validation Loss: 0.0919, MAE Error Percentage: 49.57 %
+2024-07-25 12:11:49,032 - INFO - Epoch 20/50, Loss: 0.0819, Validation Loss: 0.0919, MAE Error Percentage: 49.40 %
+2024-07-25 12:11:49,915 - INFO - Epoch 21/50, Loss: 0.0822, Validation Loss: 0.0919, MAE Error Percentage: 49.38 %
+2024-07-25 12:11:50,764 - INFO - Epoch 22/50, Loss: 0.0819, Validation Loss: 0.0922, MAE Error Percentage: 49.81 %
+2024-07-25 12:11:51,629 - INFO - Epoch 23/50, Loss: 0.0821, Validation Loss: 0.0919, MAE Error Percentage: 49.39 %
+2024-07-25 12:11:51,630 - INFO - Epoch 23/50, Final Model MAE Error Percentage: 49.41 %
+2024-07-25 12:11:51,630 - INFO - Training done. Model saved. 
+
+2024-07-25 12:11:51,631 - INFO - Training done. Model saved. 
+
+2024-07-25 12:30:47,313 - INFO - models/ElecUseShortTermPredictor-test1-Pt-in_24_1-out_1_1.pth is loaded. Making predictions.
+2024-07-25 12:30:47,328 - INFO - Done. 
+
+2024-07-25 12:30:47,336 - INFO - models/ElecUseShortTermPredictor-test2-Pt-in_24_1-out_1_1.pth is loaded. Making predictions.
+2024-07-25 12:30:47,342 - INFO - Done. 
+
+2024-07-25 12:30:47,348 - INFO - models/ElecUseShortTermPredictor-test3-Pt-in_24_1-out_1_1.pth is loaded. Making predictions.
+2024-07-25 12:30:47,350 - INFO - Done. 
+
+2024-07-25 12:31:21,255 - INFO - models/ElecUseShortTermPredictor-test1-Pt-in_24_1-out_1_1.pth is loaded. Making predictions.
+2024-07-25 12:31:21,274 - INFO - Done. 
+
+2024-07-25 12:31:21,286 - INFO - models/ElecUseShortTermPredictor-test2-Pt-in_24_1-out_1_1.pth is loaded. Making predictions.
+2024-07-25 12:31:21,288 - INFO - Done. 
+
+2024-07-25 12:31:21,299 - INFO - models/ElecUseShortTermPredictor-test3-Pt-in_24_1-out_1_1.pth is loaded. Making predictions.
+2024-07-25 12:31:21,306 - INFO - Done. 
+
+2024-07-25 12:33:58,501 - ERROR - Error loading model models/ElecUseShortTermPredictor-test4-Pt-in_24_3-out_1_1.pth
+2024-07-25 12:36:00,406 - INFO - Data processing for ElecUseShortTermPredictor-test4-Pt-in_24_3-out_3_1. Training starts soon. 
+2024-07-25 12:36:00,440 - INFO - Built a new model: models/ElecUseShortTermPredictor-test4-Pt-in_24_3-out_3_1.pth. 
+2024-07-25 12:36:00,440 - INFO - Built a new model: models/ElecUseShortTermPredictor-test4-Pt-in_24_3-out_3_1.pth. 
+2024-07-25 12:36:03,444 - INFO - start_training for ElecUseShortTermPredictor-test4-Pt-in_24_3-out_3_1. 
+2024-07-25 12:36:03,444 - INFO - start_training for ElecUseShortTermPredictor-test4-Pt-in_24_3-out_3_1. 
+2024-07-25 12:36:04,373 - INFO - Epoch 1/50, Loss: 0.1566, Validation Loss: 0.0825, MAE Error Percentage: 49.60 %
+2024-07-25 12:36:05,242 - INFO - Epoch 2/50, Loss: 0.0903, Validation Loss: 0.0812, MAE Error Percentage: 49.61 %
+2024-07-25 12:36:06,108 - INFO - Epoch 3/50, Loss: 0.0889, Validation Loss: 0.0812, MAE Error Percentage: 49.54 %
+2024-07-25 12:36:06,957 - INFO - Epoch 4/50, Loss: 0.0880, Validation Loss: 0.0813, MAE Error Percentage: 49.71 %
+2024-07-25 12:36:07,811 - INFO - Epoch 5/50, Loss: 0.0873, Validation Loss: 0.0812, MAE Error Percentage: 49.65 %
+2024-07-25 12:36:09,783 - INFO - Epoch 6/50, Loss: 0.0869, Validation Loss: 0.0811, MAE Error Percentage: 49.60 %
+2024-07-25 12:36:10,719 - INFO - Epoch 7/50, Loss: 0.0870, Validation Loss: 0.0819, MAE Error Percentage: 49.53 %
+2024-07-25 12:36:11,572 - INFO - Epoch 8/50, Loss: 0.0864, Validation Loss: 0.0815, MAE Error Percentage: 49.51 %
+2024-07-25 12:36:12,434 - INFO - Epoch 9/50, Loss: 0.0858, Validation Loss: 0.0811, MAE Error Percentage: 49.49 %
+2024-07-25 12:36:13,327 - INFO - Epoch 10/50, Loss: 0.0859, Validation Loss: 0.0813, MAE Error Percentage: 49.49 %
+2024-07-25 12:36:14,239 - INFO - Epoch 11/50, Loss: 0.0855, Validation Loss: 0.0815, MAE Error Percentage: 49.49 %
+2024-07-25 12:36:14,974 - INFO - Epoch 12/50, Loss: 0.0860, Validation Loss: 0.0811, MAE Error Percentage: 49.58 %
+2024-07-25 12:36:15,811 - INFO - Epoch 13/50, Loss: 0.0855, Validation Loss: 0.0810, MAE Error Percentage: 49.49 %
+2024-07-25 12:36:16,421 - INFO - Epoch 14/50, Loss: 0.0855, Validation Loss: 0.0811, MAE Error Percentage: 49.59 %
+2024-07-25 12:36:17,316 - INFO - Epoch 15/50, Loss: 0.0847, Validation Loss: 0.0810, MAE Error Percentage: 49.47 %
+2024-07-25 12:36:18,153 - INFO - Epoch 16/50, Loss: 0.0846, Validation Loss: 0.0810, MAE Error Percentage: 49.57 %
+2024-07-25 12:36:19,002 - INFO - Epoch 17/50, Loss: 0.0845, Validation Loss: 0.0810, MAE Error Percentage: 49.54 %
+2024-07-25 12:36:19,869 - INFO - Epoch 18/50, Loss: 0.0855, Validation Loss: 0.0810, MAE Error Percentage: 49.53 %
+2024-07-25 12:36:20,733 - INFO - Epoch 19/50, Loss: 0.0845, Validation Loss: 0.0814, MAE Error Percentage: 49.46 %
+2024-07-25 12:36:21,582 - INFO - Epoch 20/50, Loss: 0.0848, Validation Loss: 0.0809, MAE Error Percentage: 49.51 %
+2024-07-25 12:36:22,431 - INFO - Epoch 21/50, Loss: 0.0838, Validation Loss: 0.0810, MAE Error Percentage: 49.46 %
+2024-07-25 12:36:23,331 - INFO - Epoch 22/50, Loss: 0.0844, Validation Loss: 0.0812, MAE Error Percentage: 49.45 %
+2024-07-25 12:36:24,844 - INFO - Epoch 23/50, Loss: 0.0833, Validation Loss: 0.0809, MAE Error Percentage: 49.49 %
+2024-07-25 12:36:25,690 - INFO - Epoch 24/50, Loss: 0.0836, Validation Loss: 0.0809, MAE Error Percentage: 49.47 %
+2024-07-25 12:36:26,540 - INFO - Epoch 25/50, Loss: 0.0836, Validation Loss: 0.0809, MAE Error Percentage: 49.47 %
+2024-07-25 12:36:27,400 - INFO - Epoch 26/50, Loss: 0.0840, Validation Loss: 0.0811, MAE Error Percentage: 49.43 %
+2024-07-25 12:36:28,241 - INFO - Epoch 27/50, Loss: 0.0837, Validation Loss: 0.0811, MAE Error Percentage: 49.43 %
+2024-07-25 12:36:29,077 - INFO - Epoch 28/50, Loss: 0.0835, Validation Loss: 0.0809, MAE Error Percentage: 49.45 %
+2024-07-25 12:36:29,931 - INFO - Epoch 29/50, Loss: 0.0834, Validation Loss: 0.0809, MAE Error Percentage: 49.42 %
+2024-07-25 12:36:30,781 - INFO - Epoch 30/50, Loss: 0.0843, Validation Loss: 0.0814, MAE Error Percentage: 49.68 %
+2024-07-25 12:36:31,625 - INFO - Epoch 31/50, Loss: 0.0841, Validation Loss: 0.0808, MAE Error Percentage: 49.43 %
+2024-07-25 12:36:32,462 - INFO - Epoch 32/50, Loss: 0.0833, Validation Loss: 0.0810, MAE Error Percentage: 49.40 %
+2024-07-25 12:36:33,315 - INFO - Epoch 33/50, Loss: 0.0827, Validation Loss: 0.0809, MAE Error Percentage: 49.41 %
+2024-07-25 12:36:34,166 - INFO - Epoch 34/50, Loss: 0.0829, Validation Loss: 0.0809, MAE Error Percentage: 49.51 %
+2024-07-25 12:36:35,012 - INFO - Epoch 35/50, Loss: 0.0837, Validation Loss: 0.0808, MAE Error Percentage: 49.38 %
+2024-07-25 12:36:35,860 - INFO - Epoch 36/50, Loss: 0.0836, Validation Loss: 0.0810, MAE Error Percentage: 49.53 %
+2024-07-25 12:36:36,725 - INFO - Epoch 37/50, Loss: 0.0834, Validation Loss: 0.0812, MAE Error Percentage: 49.60 %
+2024-07-25 12:36:37,571 - INFO - Epoch 38/50, Loss: 0.0825, Validation Loss: 0.0809, MAE Error Percentage: 49.36 %
+2024-07-25 12:36:38,423 - INFO - Epoch 39/50, Loss: 0.0829, Validation Loss: 0.0811, MAE Error Percentage: 49.54 %
+2024-07-25 12:36:40,034 - INFO - Epoch 40/50, Loss: 0.0825, Validation Loss: 0.0810, MAE Error Percentage: 49.53 %
+2024-07-25 12:36:40,893 - INFO - Epoch 41/50, Loss: 0.0824, Validation Loss: 0.0809, MAE Error Percentage: 49.47 %
+2024-07-25 12:36:41,738 - INFO - Epoch 42/50, Loss: 0.0825, Validation Loss: 0.0809, MAE Error Percentage: 49.43 %
+2024-07-25 12:36:42,577 - INFO - Epoch 43/50, Loss: 0.0820, Validation Loss: 0.0809, MAE Error Percentage: 49.41 %
+2024-07-25 12:36:43,413 - INFO - Epoch 44/50, Loss: 0.0830, Validation Loss: 0.0809, MAE Error Percentage: 49.39 %
+2024-07-25 12:36:44,233 - INFO - Epoch 45/50, Loss: 0.0824, Validation Loss: 0.0815, MAE Error Percentage: 49.41 %
+2024-07-25 12:36:44,234 - INFO - Epoch 45/50, Final Model MAE Error Percentage: 49.38 %
+2024-07-25 12:36:44,234 - INFO - Training done. Model saved. 
+
+2024-07-25 12:36:44,234 - INFO - Training done. Model saved. 
+
+2024-07-25 12:36:44,235 - INFO - Data processing for ElecUseShortTermPredictor-test5-Pt-in_24_3-out_3_1. Training starts soon. 
+2024-07-25 12:36:44,278 - INFO - Built a new model: models/ElecUseShortTermPredictor-test5-Pt-in_24_3-out_3_1.pth. 
+2024-07-25 12:36:44,279 - INFO - Built a new model: models/ElecUseShortTermPredictor-test5-Pt-in_24_3-out_3_1.pth. 
+2024-07-25 12:36:44,280 - INFO - start_training for ElecUseShortTermPredictor-test5-Pt-in_24_3-out_3_1. 
+2024-07-25 12:36:44,281 - INFO - start_training for ElecUseShortTermPredictor-test5-Pt-in_24_3-out_3_1. 
+2024-07-25 12:36:45,113 - INFO - Epoch 1/50, Loss: 0.0881, Validation Loss: 0.0858, MAE Error Percentage: 49.86 %
+2024-07-25 12:36:45,981 - INFO - Epoch 2/50, Loss: 0.0877, Validation Loss: 0.0858, MAE Error Percentage: 49.59 %
+2024-07-25 12:36:46,810 - INFO - Epoch 3/50, Loss: 0.0873, Validation Loss: 0.0859, MAE Error Percentage: 49.85 %
+2024-07-25 12:36:47,662 - INFO - Epoch 4/50, Loss: 0.0873, Validation Loss: 0.0858, MAE Error Percentage: 49.75 %
+2024-07-25 12:36:48,502 - INFO - Epoch 5/50, Loss: 0.0877, Validation Loss: 0.0857, MAE Error Percentage: 49.69 %
+2024-07-25 12:36:49,353 - INFO - Epoch 6/50, Loss: 0.0872, Validation Loss: 0.0857, MAE Error Percentage: 49.41 %
+2024-07-25 12:36:50,173 - INFO - Epoch 7/50, Loss: 0.0869, Validation Loss: 0.0856, MAE Error Percentage: 49.61 %
+2024-07-25 12:36:51,020 - INFO - Epoch 8/50, Loss: 0.0869, Validation Loss: 0.0857, MAE Error Percentage: 49.60 %
+2024-07-25 12:36:51,872 - INFO - Epoch 9/50, Loss: 0.0866, Validation Loss: 0.0857, MAE Error Percentage: 49.55 %
+2024-07-25 12:36:52,720 - INFO - Epoch 10/50, Loss: 0.0869, Validation Loss: 0.0857, MAE Error Percentage: 49.42 %
+2024-07-25 12:36:53,624 - INFO - Epoch 11/50, Loss: 0.0870, Validation Loss: 0.0855, MAE Error Percentage: 49.45 %
+2024-07-25 12:36:55,529 - INFO - Epoch 12/50, Loss: 0.0869, Validation Loss: 0.0857, MAE Error Percentage: 49.50 %
+2024-07-25 12:36:56,411 - INFO - Epoch 13/50, Loss: 0.0867, Validation Loss: 0.0857, MAE Error Percentage: 49.73 %
+2024-07-25 12:36:57,233 - INFO - Epoch 14/50, Loss: 0.0865, Validation Loss: 0.0856, MAE Error Percentage: 49.47 %
+2024-07-25 12:36:58,071 - INFO - Epoch 15/50, Loss: 0.0870, Validation Loss: 0.0855, MAE Error Percentage: 49.51 %
+2024-07-25 12:36:58,920 - INFO - Epoch 16/50, Loss: 0.0868, Validation Loss: 0.0854, MAE Error Percentage: 49.51 %
+2024-07-25 12:36:59,776 - INFO - Epoch 17/50, Loss: 0.0865, Validation Loss: 0.0857, MAE Error Percentage: 49.50 %
+2024-07-25 12:37:00,615 - INFO - Epoch 18/50, Loss: 0.0861, Validation Loss: 0.0856, MAE Error Percentage: 49.56 %
+2024-07-25 12:37:01,477 - INFO - Epoch 19/50, Loss: 0.0864, Validation Loss: 0.0853, MAE Error Percentage: 49.27 %
+2024-07-25 12:37:02,326 - INFO - Epoch 20/50, Loss: 0.0870, Validation Loss: 0.0856, MAE Error Percentage: 49.54 %
+2024-07-25 12:37:03,154 - INFO - Epoch 21/50, Loss: 0.0861, Validation Loss: 0.0855, MAE Error Percentage: 49.59 %
+2024-07-25 12:37:04,004 - INFO - Epoch 22/50, Loss: 0.0857, Validation Loss: 0.0852, MAE Error Percentage: 49.39 %
+2024-07-25 12:37:04,844 - INFO - Epoch 23/50, Loss: 0.0862, Validation Loss: 0.0857, MAE Error Percentage: 49.77 %
+2024-07-25 12:37:05,671 - INFO - Epoch 24/50, Loss: 0.0859, Validation Loss: 0.0873, MAE Error Percentage: 49.92 %
+2024-07-25 12:37:06,512 - INFO - Epoch 25/50, Loss: 0.0860, Validation Loss: 0.0853, MAE Error Percentage: 49.61 %
+2024-07-25 12:37:07,352 - INFO - Epoch 26/50, Loss: 0.0862, Validation Loss: 0.0853, MAE Error Percentage: 49.38 %
+2024-07-25 12:37:08,160 - INFO - Epoch 27/50, Loss: 0.0865, Validation Loss: 0.0854, MAE Error Percentage: 49.50 %
+2024-07-25 12:37:09,821 - INFO - Epoch 28/50, Loss: 0.0855, Validation Loss: 0.0855, MAE Error Percentage: 49.57 %
+2024-07-25 12:37:10,819 - INFO - Epoch 29/50, Loss: 0.0861, Validation Loss: 0.0852, MAE Error Percentage: 49.39 %
+2024-07-25 12:37:11,719 - INFO - Epoch 30/50, Loss: 0.0857, Validation Loss: 0.0853, MAE Error Percentage: 49.53 %
+2024-07-25 12:37:12,696 - INFO - Epoch 31/50, Loss: 0.0851, Validation Loss: 0.0853, MAE Error Percentage: 49.57 %
+2024-07-25 12:37:13,562 - INFO - Epoch 32/50, Loss: 0.0856, Validation Loss: 0.0861, MAE Error Percentage: 49.71 %
+2024-07-25 12:37:13,563 - INFO - Epoch 32/50, Final Model MAE Error Percentage: 49.39 %
+2024-07-25 12:37:13,563 - INFO - Training done. Model saved. 
+
+2024-07-25 12:37:13,563 - INFO - Training done. Model saved. 
+
+2024-07-25 12:37:13,565 - INFO - Data processing for ElecUseShortTermPredictor-test6-Pt-in_24_3-out_3_1. Training starts soon. 
+2024-07-25 12:37:13,609 - INFO - Built a new model: models/ElecUseShortTermPredictor-test6-Pt-in_24_3-out_3_1.pth. 
+2024-07-25 12:37:13,609 - INFO - Built a new model: models/ElecUseShortTermPredictor-test6-Pt-in_24_3-out_3_1.pth. 
+2024-07-25 12:37:13,611 - INFO - start_training for ElecUseShortTermPredictor-test6-Pt-in_24_3-out_3_1. 
+2024-07-25 12:37:13,611 - INFO - start_training for ElecUseShortTermPredictor-test6-Pt-in_24_3-out_3_1. 
+2024-07-25 12:37:14,496 - INFO - Epoch 1/50, Loss: 0.0799, Validation Loss: 0.0763, MAE Error Percentage: 47.16 %
+2024-07-25 12:37:15,406 - INFO - Epoch 2/50, Loss: 0.0798, Validation Loss: 0.0761, MAE Error Percentage: 47.17 %
+2024-07-25 12:37:16,267 - INFO - Epoch 3/50, Loss: 0.0797, Validation Loss: 0.0761, MAE Error Percentage: 47.11 %
+2024-07-25 12:37:17,136 - INFO - Epoch 4/50, Loss: 0.0799, Validation Loss: 0.0762, MAE Error Percentage: 47.15 %
+2024-07-25 12:37:18,020 - INFO - Epoch 5/50, Loss: 0.0797, Validation Loss: 0.0762, MAE Error Percentage: 47.13 %
+2024-07-25 12:37:18,892 - INFO - Epoch 6/50, Loss: 0.0795, Validation Loss: 0.0762, MAE Error Percentage: 47.18 %
+2024-07-25 12:37:19,756 - INFO - Epoch 7/50, Loss: 0.0796, Validation Loss: 0.0763, MAE Error Percentage: 47.23 %
+2024-07-25 12:37:20,641 - INFO - Epoch 8/50, Loss: 0.0795, Validation Loss: 0.0763, MAE Error Percentage: 47.23 %
+2024-07-25 12:37:21,515 - INFO - Epoch 9/50, Loss: 0.0798, Validation Loss: 0.0765, MAE Error Percentage: 47.31 %
+2024-07-25 12:37:22,383 - INFO - Epoch 10/50, Loss: 0.0797, Validation Loss: 0.0764, MAE Error Percentage: 47.27 %
+2024-07-25 12:37:23,421 - INFO - Epoch 11/50, Loss: 0.0799, Validation Loss: 0.0760, MAE Error Percentage: 47.12 %
+2024-07-25 12:37:24,336 - INFO - Epoch 12/50, Loss: 0.0802, Validation Loss: 0.0761, MAE Error Percentage: 47.18 %
+2024-07-25 12:37:25,193 - INFO - Epoch 13/50, Loss: 0.0796, Validation Loss: 0.0762, MAE Error Percentage: 47.21 %
+2024-07-25 12:37:26,027 - INFO - Epoch 14/50, Loss: 0.0796, Validation Loss: 0.0771, MAE Error Percentage: 47.51 %
+2024-07-25 12:37:26,893 - INFO - Epoch 15/50, Loss: 0.0794, Validation Loss: 0.0762, MAE Error Percentage: 47.15 %
+2024-07-25 12:37:27,776 - INFO - Epoch 16/50, Loss: 0.0794, Validation Loss: 0.0761, MAE Error Percentage: 47.18 %
+2024-07-25 12:37:28,672 - INFO - Epoch 17/50, Loss: 0.0793, Validation Loss: 0.0764, MAE Error Percentage: 47.26 %
+2024-07-25 12:37:29,521 - INFO - Epoch 18/50, Loss: 0.0791, Validation Loss: 0.0763, MAE Error Percentage: 47.28 %
+2024-07-25 12:37:30,383 - INFO - Epoch 19/50, Loss: 0.0796, Validation Loss: 0.0766, MAE Error Percentage: 47.35 %
+2024-07-25 12:37:31,214 - INFO - Epoch 20/50, Loss: 0.0796, Validation Loss: 0.0765, MAE Error Percentage: 47.27 %
+2024-07-25 12:37:32,062 - INFO - Epoch 21/50, Loss: 0.0790, Validation Loss: 0.0762, MAE Error Percentage: 47.24 %
+2024-07-25 12:37:32,062 - INFO - Epoch 21/50, Final Model MAE Error Percentage: 47.12 %
+2024-07-25 12:37:32,062 - INFO - Training done. Model saved. 
+
+2024-07-25 12:37:32,062 - INFO - Training done. Model saved. 
+
+2024-07-25 12:38:38,001 - INFO - models/ElecUseShortTermPredictor-test4-Pt-in_24_3-out_3_1.pth is loaded. Making predictions.
+2024-07-25 12:38:38,006 - INFO - Done. 
+
+2024-07-25 12:38:38,028 - INFO - models/ElecUseShortTermPredictor-test5-Pt-in_24_3-out_3_1.pth is loaded. Making predictions.
+2024-07-25 12:38:38,033 - INFO - Done. 
+
+2024-07-25 12:38:38,050 - INFO - models/ElecUseShortTermPredictor-test6-Pt-in_24_3-out_3_1.pth is loaded. Making predictions.
+2024-07-25 12:38:38,054 - INFO - Done. 
+
+2024-07-25 12:38:38,056 - ERROR - Error loading model models/ElecUseShortTermPredictor-TEMPOUT-in_24_3-out_3_1.pth
+2024-07-25 12:41:59,306 - INFO - models/ElecUseShortTermPredictor-test4-Pt-in_24_3-out_3_1.pth is loaded. Making predictions.
+2024-07-25 12:41:59,319 - INFO - Done. 
+
+2024-07-25 12:41:59,323 - INFO - models/ElecUseShortTermPredictor-test5-Pt-in_24_3-out_3_1.pth is loaded. Making predictions.
+2024-07-25 12:41:59,326 - INFO - Done. 
+
+2024-07-25 12:41:59,330 - INFO - models/ElecUseShortTermPredictor-test6-Pt-in_24_3-out_3_1.pth is loaded. Making predictions.
+2024-07-25 12:41:59,332 - INFO - Done. 
+
+2024-07-25 12:42:31,196 - INFO - Data processing for ElecUseShortTermPredictor-test4-Pt-in_24_3-out_6_1. Training starts soon. 
+2024-07-25 12:42:31,234 - INFO - Built a new model: models/ElecUseShortTermPredictor-test4-Pt-in_24_3-out_6_1.pth. 
+2024-07-25 12:42:31,234 - INFO - Built a new model: models/ElecUseShortTermPredictor-test4-Pt-in_24_3-out_6_1.pth. 
+2024-07-25 12:42:34,552 - INFO - start_training for ElecUseShortTermPredictor-test4-Pt-in_24_3-out_6_1. 
+2024-07-25 12:42:34,552 - INFO - start_training for ElecUseShortTermPredictor-test4-Pt-in_24_3-out_6_1. 
+2024-07-25 12:42:35,420 - INFO - Epoch 1/50, Loss: 0.1723, Validation Loss: 0.0834, MAE Error Percentage: 49.70 %
+2024-07-25 12:42:36,099 - INFO - Epoch 2/50, Loss: 0.0927, Validation Loss: 0.0793, MAE Error Percentage: 48.89 %
+2024-07-25 12:42:37,362 - INFO - Epoch 3/50, Loss: 0.0900, Validation Loss: 0.0795, MAE Error Percentage: 48.92 %
+2024-07-25 12:42:37,996 - INFO - Epoch 4/50, Loss: 0.0889, Validation Loss: 0.0794, MAE Error Percentage: 48.90 %
+2024-07-25 12:42:38,577 - INFO - Epoch 5/50, Loss: 0.0884, Validation Loss: 0.0794, MAE Error Percentage: 48.90 %
+2024-07-25 12:42:39,180 - INFO - Epoch 6/50, Loss: 0.0876, Validation Loss: 0.0793, MAE Error Percentage: 48.86 %
+2024-07-25 12:42:39,773 - INFO - Epoch 7/50, Loss: 0.0869, Validation Loss: 0.0795, MAE Error Percentage: 48.92 %
+2024-07-25 12:42:40,361 - INFO - Epoch 8/50, Loss: 0.0868, Validation Loss: 0.0796, MAE Error Percentage: 48.93 %
+2024-07-25 12:42:41,189 - INFO - Epoch 9/50, Loss: 0.0862, Validation Loss: 0.0796, MAE Error Percentage: 48.92 %
+2024-07-25 12:42:41,933 - INFO - Epoch 10/50, Loss: 0.0856, Validation Loss: 0.0795, MAE Error Percentage: 48.90 %
+2024-07-25 12:42:42,488 - INFO - Epoch 11/50, Loss: 0.0861, Validation Loss: 0.0796, MAE Error Percentage: 48.90 %
+2024-07-25 12:42:43,090 - INFO - Epoch 12/50, Loss: 0.0855, Validation Loss: 0.0798, MAE Error Percentage: 48.94 %
+2024-07-25 12:42:43,799 - INFO - Epoch 13/50, Loss: 0.0847, Validation Loss: 0.0792, MAE Error Percentage: 48.82 %
+2024-07-25 12:42:44,623 - INFO - Epoch 14/50, Loss: 0.0850, Validation Loss: 0.0796, MAE Error Percentage: 48.83 %
+2024-07-25 12:42:45,260 - INFO - Epoch 15/50, Loss: 0.0846, Validation Loss: 0.0793, MAE Error Percentage: 48.78 %
+2024-07-25 12:42:45,884 - INFO - Epoch 16/50, Loss: 0.0847, Validation Loss: 0.0794, MAE Error Percentage: 48.83 %
+2024-07-25 12:42:46,551 - INFO - Epoch 17/50, Loss: 0.0846, Validation Loss: 0.0800, MAE Error Percentage: 48.95 %
+2024-07-25 12:42:47,185 - INFO - Epoch 18/50, Loss: 0.0848, Validation Loss: 0.0790, MAE Error Percentage: 48.72 %
+2024-07-25 12:42:47,818 - INFO - Epoch 19/50, Loss: 0.0844, Validation Loss: 0.0791, MAE Error Percentage: 48.74 %
+2024-07-25 12:42:48,411 - INFO - Epoch 20/50, Loss: 0.0838, Validation Loss: 0.0802, MAE Error Percentage: 48.96 %
+2024-07-25 12:42:49,011 - INFO - Epoch 21/50, Loss: 0.0845, Validation Loss: 0.0792, MAE Error Percentage: 48.74 %
+2024-07-25 12:42:49,619 - INFO - Epoch 22/50, Loss: 0.0839, Validation Loss: 0.0799, MAE Error Percentage: 48.88 %
+2024-07-25 12:42:50,211 - INFO - Epoch 23/50, Loss: 0.0842, Validation Loss: 0.0791, MAE Error Percentage: 48.70 %
+2024-07-25 12:42:50,816 - INFO - Epoch 24/50, Loss: 0.0838, Validation Loss: 0.0790, MAE Error Percentage: 48.69 %
+2024-07-25 12:42:51,482 - INFO - Epoch 25/50, Loss: 0.0835, Validation Loss: 0.0792, MAE Error Percentage: 48.73 %
+2024-07-25 12:42:52,067 - INFO - Epoch 26/50, Loss: 0.0835, Validation Loss: 0.0796, MAE Error Percentage: 48.79 %
+2024-07-25 12:42:52,691 - INFO - Epoch 27/50, Loss: 0.0837, Validation Loss: 0.0794, MAE Error Percentage: 48.72 %
+2024-07-25 12:42:53,309 - INFO - Epoch 28/50, Loss: 0.0841, Validation Loss: 0.0791, MAE Error Percentage: 48.70 %
+2024-07-25 12:42:53,310 - INFO - Epoch 28/50, Final Model MAE Error Percentage: 48.72 %
+2024-07-25 12:42:53,310 - INFO - Training done. Model saved. 
+
+2024-07-25 12:42:53,310 - INFO - Training done. Model saved. 
+
+2024-07-25 12:42:53,311 - INFO - Data processing for ElecUseShortTermPredictor-test5-Pt-in_24_3-out_6_1. Training starts soon. 
+2024-07-25 12:42:53,341 - INFO - Built a new model: models/ElecUseShortTermPredictor-test5-Pt-in_24_3-out_6_1.pth. 
+2024-07-25 12:42:53,341 - INFO - Built a new model: models/ElecUseShortTermPredictor-test5-Pt-in_24_3-out_6_1.pth. 
+2024-07-25 12:42:53,342 - INFO - start_training for ElecUseShortTermPredictor-test5-Pt-in_24_3-out_6_1. 
+2024-07-25 12:42:53,342 - INFO - start_training for ElecUseShortTermPredictor-test5-Pt-in_24_3-out_6_1. 
+2024-07-25 12:42:53,931 - INFO - Epoch 1/50, Loss: 0.0891, Validation Loss: 0.0849, MAE Error Percentage: 49.48 %
+2024-07-25 12:42:54,529 - INFO - Epoch 2/50, Loss: 0.0885, Validation Loss: 0.0847, MAE Error Percentage: 49.44 %
+2024-07-25 12:42:55,246 - INFO - Epoch 3/50, Loss: 0.0879, Validation Loss: 0.0850, MAE Error Percentage: 49.46 %
+2024-07-25 12:42:56,503 - INFO - Epoch 4/50, Loss: 0.0881, Validation Loss: 0.0845, MAE Error Percentage: 49.42 %
+2024-07-25 12:42:57,089 - INFO - Epoch 5/50, Loss: 0.0887, Validation Loss: 0.0854, MAE Error Percentage: 49.52 %
+2024-07-25 12:42:57,662 - INFO - Epoch 6/50, Loss: 0.0880, Validation Loss: 0.0846, MAE Error Percentage: 49.41 %
+2024-07-25 12:42:58,242 - INFO - Epoch 7/50, Loss: 0.0873, Validation Loss: 0.0846, MAE Error Percentage: 49.39 %
+2024-07-25 12:42:58,829 - INFO - Epoch 8/50, Loss: 0.0875, Validation Loss: 0.0845, MAE Error Percentage: 49.41 %
+2024-07-25 12:42:59,405 - INFO - Epoch 9/50, Loss: 0.0869, Validation Loss: 0.0850, MAE Error Percentage: 49.53 %
+2024-07-25 12:42:59,991 - INFO - Epoch 10/50, Loss: 0.0874, Validation Loss: 0.0845, MAE Error Percentage: 49.41 %
+2024-07-25 12:43:00,581 - INFO - Epoch 11/50, Loss: 0.0870, Validation Loss: 0.0845, MAE Error Percentage: 49.37 %
+2024-07-25 12:43:01,189 - INFO - Epoch 12/50, Loss: 0.0866, Validation Loss: 0.0847, MAE Error Percentage: 49.46 %
+2024-07-25 12:43:01,787 - INFO - Epoch 13/50, Loss: 0.0871, Validation Loss: 0.0847, MAE Error Percentage: 49.38 %
+2024-07-25 12:43:02,442 - INFO - Epoch 14/50, Loss: 0.0872, Validation Loss: 0.0845, MAE Error Percentage: 49.36 %
+2024-07-25 12:43:03,141 - INFO - Epoch 15/50, Loss: 0.0869, Validation Loss: 0.0846, MAE Error Percentage: 49.40 %
+2024-07-25 12:43:03,810 - INFO - Epoch 16/50, Loss: 0.0861, Validation Loss: 0.0844, MAE Error Percentage: 49.33 %
+2024-07-25 12:43:05,068 - INFO - Epoch 17/50, Loss: 0.0861, Validation Loss: 0.0842, MAE Error Percentage: 49.30 %
+2024-07-25 12:43:05,701 - INFO - Epoch 18/50, Loss: 0.0864, Validation Loss: 0.0844, MAE Error Percentage: 49.32 %
+2024-07-25 12:43:06,390 - INFO - Epoch 19/50, Loss: 0.0864, Validation Loss: 0.0842, MAE Error Percentage: 49.31 %
+2024-07-25 12:43:07,663 - INFO - Epoch 20/50, Loss: 0.0861, Validation Loss: 0.0846, MAE Error Percentage: 49.39 %
+2024-07-25 12:43:08,410 - INFO - Epoch 21/50, Loss: 0.0861, Validation Loss: 0.0843, MAE Error Percentage: 49.33 %
+2024-07-25 12:43:09,029 - INFO - Epoch 22/50, Loss: 0.0865, Validation Loss: 0.0844, MAE Error Percentage: 49.34 %
+2024-07-25 12:43:09,699 - INFO - Epoch 23/50, Loss: 0.0858, Validation Loss: 0.0845, MAE Error Percentage: 49.32 %
+2024-07-25 12:43:10,787 - INFO - Epoch 24/50, Loss: 0.0864, Validation Loss: 0.0844, MAE Error Percentage: 49.32 %
+2024-07-25 12:43:11,413 - INFO - Epoch 25/50, Loss: 0.0858, Validation Loss: 0.0844, MAE Error Percentage: 49.32 %
+2024-07-25 12:43:11,998 - INFO - Epoch 26/50, Loss: 0.0859, Validation Loss: 0.0846, MAE Error Percentage: 49.36 %
+2024-07-25 12:43:12,583 - INFO - Epoch 27/50, Loss: 0.0858, Validation Loss: 0.0841, MAE Error Percentage: 49.25 %
+2024-07-25 12:43:13,161 - INFO - Epoch 28/50, Loss: 0.0858, Validation Loss: 0.0842, MAE Error Percentage: 49.26 %
+2024-07-25 12:43:13,753 - INFO - Epoch 29/50, Loss: 0.0855, Validation Loss: 0.0839, MAE Error Percentage: 49.21 %
+2024-07-25 12:43:14,324 - INFO - Epoch 30/50, Loss: 0.0857, Validation Loss: 0.0842, MAE Error Percentage: 49.26 %
+2024-07-25 12:43:14,908 - INFO - Epoch 31/50, Loss: 0.0857, Validation Loss: 0.0841, MAE Error Percentage: 49.23 %
+2024-07-25 12:43:15,511 - INFO - Epoch 32/50, Loss: 0.0855, Validation Loss: 0.0838, MAE Error Percentage: 49.18 %
+2024-07-25 12:43:16,107 - INFO - Epoch 33/50, Loss: 0.0855, Validation Loss: 0.0840, MAE Error Percentage: 49.22 %
+2024-07-25 12:43:16,696 - INFO - Epoch 34/50, Loss: 0.0853, Validation Loss: 0.0835, MAE Error Percentage: 49.08 %
+2024-07-25 12:43:17,289 - INFO - Epoch 35/50, Loss: 0.0850, Validation Loss: 0.0840, MAE Error Percentage: 49.21 %
+2024-07-25 12:43:17,891 - INFO - Epoch 36/50, Loss: 0.0849, Validation Loss: 0.0837, MAE Error Percentage: 49.04 %
+2024-07-25 12:43:18,491 - INFO - Epoch 37/50, Loss: 0.0852, Validation Loss: 0.0843, MAE Error Percentage: 49.27 %
+2024-07-25 12:43:19,064 - INFO - Epoch 38/50, Loss: 0.0853, Validation Loss: 0.0840, MAE Error Percentage: 49.19 %
+2024-07-25 12:43:19,667 - INFO - Epoch 39/50, Loss: 0.0852, Validation Loss: 0.0837, MAE Error Percentage: 49.13 %
+2024-07-25 12:43:20,269 - INFO - Epoch 40/50, Loss: 0.0851, Validation Loss: 0.0835, MAE Error Percentage: 49.08 %
+2024-07-25 12:43:20,853 - INFO - Epoch 41/50, Loss: 0.0850, Validation Loss: 0.0834, MAE Error Percentage: 49.01 %
+2024-07-25 12:43:21,448 - INFO - Epoch 42/50, Loss: 0.0845, Validation Loss: 0.0829, MAE Error Percentage: 48.77 %
+2024-07-25 12:43:22,048 - INFO - Epoch 43/50, Loss: 0.0846, Validation Loss: 0.0827, MAE Error Percentage: 48.76 %
+2024-07-25 12:43:22,640 - INFO - Epoch 44/50, Loss: 0.0845, Validation Loss: 0.0836, MAE Error Percentage: 49.06 %
+2024-07-25 12:43:23,222 - INFO - Epoch 45/50, Loss: 0.0844, Validation Loss: 0.0831, MAE Error Percentage: 48.87 %
+2024-07-25 12:43:23,800 - INFO - Epoch 46/50, Loss: 0.0841, Validation Loss: 0.0827, MAE Error Percentage: 48.77 %
+2024-07-25 12:43:24,391 - INFO - Epoch 47/50, Loss: 0.0838, Validation Loss: 0.0830, MAE Error Percentage: 48.80 %
+2024-07-25 12:43:24,982 - INFO - Epoch 48/50, Loss: 0.0833, Validation Loss: 0.0826, MAE Error Percentage: 48.75 %
+2024-07-25 12:43:25,560 - INFO - Epoch 49/50, Loss: 0.0832, Validation Loss: 0.0824, MAE Error Percentage: 48.64 %
+2024-07-25 12:43:26,146 - INFO - Epoch 50/50, Loss: 0.0827, Validation Loss: 0.0819, MAE Error Percentage: 48.51 %
+2024-07-25 12:43:26,149 - INFO - Epoch 50/50, Final Model MAE Error Percentage: 48.51 %
+2024-07-25 12:43:26,153 - INFO - Training done. Model saved. 
+
+2024-07-25 12:43:26,153 - INFO - Training done. Model saved. 
+
+2024-07-25 12:43:26,154 - INFO - Data processing for ElecUseShortTermPredictor-test6-Pt-in_24_3-out_6_1. Training starts soon. 
+2024-07-25 12:43:26,187 - INFO - Built a new model: models/ElecUseShortTermPredictor-test6-Pt-in_24_3-out_6_1.pth. 
+2024-07-25 12:43:26,187 - INFO - Built a new model: models/ElecUseShortTermPredictor-test6-Pt-in_24_3-out_6_1.pth. 
+2024-07-25 12:43:26,189 - INFO - start_training for ElecUseShortTermPredictor-test6-Pt-in_24_3-out_6_1. 
+2024-07-25 12:43:26,189 - INFO - start_training for ElecUseShortTermPredictor-test6-Pt-in_24_3-out_6_1. 
+2024-07-25 12:43:26,769 - INFO - Epoch 1/50, Loss: 0.0793, Validation Loss: 0.0833, MAE Error Percentage: 50.38 %
+2024-07-25 12:43:27,354 - INFO - Epoch 2/50, Loss: 0.0790, Validation Loss: 0.0833, MAE Error Percentage: 50.37 %
+2024-07-25 12:43:27,947 - INFO - Epoch 3/50, Loss: 0.0787, Validation Loss: 0.0831, MAE Error Percentage: 50.31 %
+2024-07-25 12:43:28,561 - INFO - Epoch 4/50, Loss: 0.0785, Validation Loss: 0.0830, MAE Error Percentage: 50.25 %
+2024-07-25 12:43:29,493 - INFO - Epoch 5/50, Loss: 0.0783, Validation Loss: 0.0828, MAE Error Percentage: 50.17 %
+2024-07-25 12:43:30,176 - INFO - Epoch 6/50, Loss: 0.0780, Validation Loss: 0.0825, MAE Error Percentage: 50.16 %
+2024-07-25 12:43:31,125 - INFO - Epoch 7/50, Loss: 0.0778, Validation Loss: 0.0818, MAE Error Percentage: 49.79 %
+2024-07-25 12:43:32,040 - INFO - Epoch 8/50, Loss: 0.0777, Validation Loss: 0.0817, MAE Error Percentage: 49.85 %
+2024-07-25 12:43:32,931 - INFO - Epoch 9/50, Loss: 0.0776, Validation Loss: 0.0825, MAE Error Percentage: 49.94 %
+2024-07-25 12:43:33,813 - INFO - Epoch 10/50, Loss: 0.0775, Validation Loss: 0.0817, MAE Error Percentage: 49.66 %
+2024-07-25 12:43:34,703 - INFO - Epoch 11/50, Loss: 0.0773, Validation Loss: 0.0810, MAE Error Percentage: 49.41 %
+2024-07-25 12:43:35,555 - INFO - Epoch 12/50, Loss: 0.0770, Validation Loss: 0.0811, MAE Error Percentage: 49.35 %
+2024-07-25 12:43:36,410 - INFO - Epoch 13/50, Loss: 0.0764, Validation Loss: 0.0801, MAE Error Percentage: 49.13 %
+2024-07-25 12:43:37,465 - INFO - Epoch 14/50, Loss: 0.0760, Validation Loss: 0.0793, MAE Error Percentage: 48.92 %
+2024-07-25 12:43:38,429 - INFO - Epoch 15/50, Loss: 0.0757, Validation Loss: 0.0786, MAE Error Percentage: 48.61 %
+2024-07-25 12:43:39,294 - INFO - Epoch 16/50, Loss: 0.0755, Validation Loss: 0.0785, MAE Error Percentage: 48.51 %
+2024-07-25 12:43:40,178 - INFO - Epoch 17/50, Loss: 0.0756, Validation Loss: 0.0799, MAE Error Percentage: 48.95 %
+2024-07-25 12:43:41,029 - INFO - Epoch 18/50, Loss: 0.0756, Validation Loss: 0.0790, MAE Error Percentage: 48.58 %
+2024-07-25 12:43:41,871 - INFO - Epoch 19/50, Loss: 0.0746, Validation Loss: 0.0785, MAE Error Percentage: 48.51 %
+2024-07-25 12:43:42,753 - INFO - Epoch 20/50, Loss: 0.0749, Validation Loss: 0.0773, MAE Error Percentage: 48.04 %
+2024-07-25 12:43:43,583 - INFO - Epoch 21/50, Loss: 0.0739, Validation Loss: 0.0773, MAE Error Percentage: 48.01 %
+2024-07-25 12:43:44,439 - INFO - Epoch 22/50, Loss: 0.0736, Validation Loss: 0.0771, MAE Error Percentage: 47.79 %
+2024-07-25 12:43:45,331 - INFO - Epoch 23/50, Loss: 0.0734, Validation Loss: 0.0769, MAE Error Percentage: 47.74 %
+2024-07-25 12:43:46,211 - INFO - Epoch 24/50, Loss: 0.0731, Validation Loss: 0.0758, MAE Error Percentage: 47.39 %
+2024-07-25 12:43:47,130 - INFO - Epoch 25/50, Loss: 0.0728, Validation Loss: 0.0762, MAE Error Percentage: 47.47 %
+2024-07-25 12:43:48,001 - INFO - Epoch 26/50, Loss: 0.0725, Validation Loss: 0.0768, MAE Error Percentage: 47.74 %
+2024-07-25 12:43:48,896 - INFO - Epoch 27/50, Loss: 0.0723, Validation Loss: 0.0752, MAE Error Percentage: 47.17 %
+2024-07-25 12:43:49,775 - INFO - Epoch 28/50, Loss: 0.0718, Validation Loss: 0.0766, MAE Error Percentage: 47.73 %
+2024-07-25 12:43:51,695 - INFO - Epoch 29/50, Loss: 0.0715, Validation Loss: 0.0744, MAE Error Percentage: 46.98 %
+2024-07-25 12:43:52,579 - INFO - Epoch 30/50, Loss: 0.0705, Validation Loss: 0.0737, MAE Error Percentage: 46.74 %
+2024-07-25 12:43:53,436 - INFO - Epoch 31/50, Loss: 0.0705, Validation Loss: 0.0747, MAE Error Percentage: 47.06 %
+2024-07-25 12:43:54,277 - INFO - Epoch 32/50, Loss: 0.0698, Validation Loss: 0.0741, MAE Error Percentage: 46.80 %
+2024-07-25 12:43:55,102 - INFO - Epoch 33/50, Loss: 0.0698, Validation Loss: 0.0743, MAE Error Percentage: 46.82 %
+2024-07-25 12:43:55,961 - INFO - Epoch 34/50, Loss: 0.0699, Validation Loss: 0.0724, MAE Error Percentage: 46.27 %
+2024-07-25 12:43:56,821 - INFO - Epoch 35/50, Loss: 0.0688, Validation Loss: 0.0735, MAE Error Percentage: 46.55 %
+2024-07-25 12:43:57,683 - INFO - Epoch 36/50, Loss: 0.0680, Validation Loss: 0.0707, MAE Error Percentage: 45.59 %
+2024-07-25 12:43:58,540 - INFO - Epoch 37/50, Loss: 0.0677, Validation Loss: 0.0702, MAE Error Percentage: 45.32 %
+2024-07-25 12:43:59,408 - INFO - Epoch 38/50, Loss: 0.0668, Validation Loss: 0.0702, MAE Error Percentage: 45.27 %
+2024-07-25 12:44:00,282 - INFO - Epoch 39/50, Loss: 0.0668, Validation Loss: 0.0692, MAE Error Percentage: 44.91 %
+2024-07-25 12:44:01,130 - INFO - Epoch 40/50, Loss: 0.0652, Validation Loss: 0.0686, MAE Error Percentage: 44.73 %
+2024-07-25 12:44:01,974 - INFO - Epoch 41/50, Loss: 0.0653, Validation Loss: 0.0675, MAE Error Percentage: 44.21 %
+2024-07-25 12:44:02,807 - INFO - Epoch 42/50, Loss: 0.0644, Validation Loss: 0.0675, MAE Error Percentage: 44.04 %
+2024-07-25 12:44:03,668 - INFO - Epoch 43/50, Loss: 0.0638, Validation Loss: 0.0660, MAE Error Percentage: 43.48 %
+2024-07-25 12:44:04,500 - INFO - Epoch 44/50, Loss: 0.0635, Validation Loss: 0.0642, MAE Error Percentage: 42.84 %
+2024-07-25 12:44:05,373 - INFO - Epoch 45/50, Loss: 0.0619, Validation Loss: 0.0656, MAE Error Percentage: 43.28 %
+2024-07-25 12:44:06,233 - INFO - Epoch 46/50, Loss: 0.0611, Validation Loss: 0.0641, MAE Error Percentage: 42.92 %
+2024-07-25 12:44:07,093 - INFO - Epoch 47/50, Loss: 0.0604, Validation Loss: 0.0624, MAE Error Percentage: 41.79 %
+2024-07-25 12:44:07,949 - INFO - Epoch 48/50, Loss: 0.0591, Validation Loss: 0.0616, MAE Error Percentage: 41.75 %
+2024-07-25 12:44:08,782 - INFO - Epoch 49/50, Loss: 0.0586, Validation Loss: 0.0585, MAE Error Percentage: 40.48 %
+2024-07-25 12:44:09,666 - INFO - Epoch 50/50, Loss: 0.0579, Validation Loss: 0.0588, MAE Error Percentage: 40.42 %
+2024-07-25 12:44:09,667 - INFO - Epoch 50/50, Final Model MAE Error Percentage: 40.48 %
+2024-07-25 12:44:09,672 - INFO - Training done. Model saved. 
+
+2024-07-25 12:44:09,672 - INFO - Training done. Model saved. 
+
+2024-07-25 12:44:33,865 - INFO - models/ElecUseShortTermPredictor-test4-Pt-in_24_3-out_6_1.pth is loaded. Making predictions.
+2024-07-25 12:44:33,882 - INFO - Done. 
+
+2024-07-25 12:44:33,893 - INFO - models/ElecUseShortTermPredictor-test5-Pt-in_24_3-out_6_1.pth is loaded. Making predictions.
+2024-07-25 12:44:33,899 - INFO - Done. 
+
+2024-07-25 12:44:33,911 - INFO - models/ElecUseShortTermPredictor-test6-Pt-in_24_3-out_6_1.pth is loaded. Making predictions.
+2024-07-25 12:44:33,913 - INFO - Done. 
+
+2024-07-25 12:57:50,378 - INFO - Data processing for ElecUseLongTermPredictor-total_elec_use_long_term-in_1_8-out_1_1. Training starts soon. 
+2024-07-25 12:57:50,386 - INFO - Built a new model: models/ElecUseLongTermPredictor-total_elec_use_long_term-in_1_8-out_1_1.pth. 
+2024-07-25 12:57:50,386 - INFO - Built a new model: models/ElecUseLongTermPredictor-total_elec_use_long_term-in_1_8-out_1_1.pth. 
+2024-07-25 12:57:53,604 - INFO - start_training for ElecUseLongTermPredictor-total_elec_use_long_term-in_1_8-out_1_1. 
+2024-07-25 12:57:53,604 - INFO - start_training for ElecUseLongTermPredictor-total_elec_use_long_term-in_1_8-out_1_1. 
+2024-07-25 12:57:53,901 - INFO - Epoch 1/50, Loss: 0.0747, Validation Loss: 0.0237, MAE Error Percentage: 25.05 %
+2024-07-25 12:57:54,162 - INFO - Epoch 2/50, Loss: 0.0330, Validation Loss: 0.0222, MAE Error Percentage: 23.42 %
+2024-07-25 12:57:54,419 - INFO - Epoch 3/50, Loss: 0.0315, Validation Loss: 0.0275, MAE Error Percentage: 25.02 %
+2024-07-25 12:57:54,688 - INFO - Epoch 4/50, Loss: 0.0292, Validation Loss: 0.0229, MAE Error Percentage: 23.59 %
+2024-07-25 12:57:54,950 - INFO - Epoch 5/50, Loss: 0.0280, Validation Loss: 0.0221, MAE Error Percentage: 23.11 %
+2024-07-25 12:57:55,205 - INFO - Epoch 6/50, Loss: 0.0269, Validation Loss: 0.0238, MAE Error Percentage: 23.86 %
+2024-07-25 12:57:55,454 - INFO - Epoch 7/50, Loss: 0.0260, Validation Loss: 0.0221, MAE Error Percentage: 23.18 %
+2024-07-25 12:57:55,723 - INFO - Epoch 8/50, Loss: 0.0254, Validation Loss: 0.0230, MAE Error Percentage: 23.33 %
+2024-07-25 12:57:56,084 - INFO - Epoch 9/50, Loss: 0.0242, Validation Loss: 0.0215, MAE Error Percentage: 23.06 %
+2024-07-25 12:57:57,588 - INFO - Epoch 10/50, Loss: 0.0257, Validation Loss: 0.0239, MAE Error Percentage: 23.69 %
+2024-07-25 12:57:57,856 - INFO - Epoch 11/50, Loss: 0.0235, Validation Loss: 0.0272, MAE Error Percentage: 25.04 %
+2024-07-25 12:57:58,113 - INFO - Epoch 12/50, Loss: 0.0238, Validation Loss: 0.0233, MAE Error Percentage: 23.44 %
+2024-07-25 12:57:58,368 - INFO - Epoch 13/50, Loss: 0.0236, Validation Loss: 0.0210, MAE Error Percentage: 22.66 %
+2024-07-25 12:57:58,633 - INFO - Epoch 14/50, Loss: 0.0235, Validation Loss: 0.0224, MAE Error Percentage: 23.20 %
+2024-07-25 12:57:58,914 - INFO - Epoch 15/50, Loss: 0.0225, Validation Loss: 0.0220, MAE Error Percentage: 23.02 %
+2024-07-25 12:57:59,171 - INFO - Epoch 16/50, Loss: 0.0228, Validation Loss: 0.0217, MAE Error Percentage: 22.88 %
+2024-07-25 12:57:59,417 - INFO - Epoch 17/50, Loss: 0.0223, Validation Loss: 0.0226, MAE Error Percentage: 23.31 %
+2024-07-25 12:57:59,669 - INFO - Epoch 18/50, Loss: 0.0227, Validation Loss: 0.0247, MAE Error Percentage: 24.05 %
+2024-07-25 12:57:59,934 - INFO - Epoch 19/50, Loss: 0.0217, Validation Loss: 0.0216, MAE Error Percentage: 22.78 %
+2024-07-25 12:58:00,186 - INFO - Epoch 20/50, Loss: 0.0209, Validation Loss: 0.0213, MAE Error Percentage: 22.69 %
+2024-07-25 12:58:00,438 - INFO - Epoch 21/50, Loss: 0.0219, Validation Loss: 0.0214, MAE Error Percentage: 22.79 %
+2024-07-25 12:58:00,695 - INFO - Epoch 22/50, Loss: 0.0203, Validation Loss: 0.0197, MAE Error Percentage: 21.99 %
+2024-07-25 12:58:00,951 - INFO - Epoch 23/50, Loss: 0.0203, Validation Loss: 0.0199, MAE Error Percentage: 22.01 %
+2024-07-25 12:58:01,205 - INFO - Epoch 24/50, Loss: 0.0199, Validation Loss: 0.0205, MAE Error Percentage: 22.23 %
+2024-07-25 12:58:01,455 - INFO - Epoch 25/50, Loss: 0.0205, Validation Loss: 0.0209, MAE Error Percentage: 22.32 %
+2024-07-25 12:58:01,728 - INFO - Epoch 26/50, Loss: 0.0210, Validation Loss: 0.0202, MAE Error Percentage: 22.10 %
+2024-07-25 12:58:01,999 - INFO - Epoch 27/50, Loss: 0.0203, Validation Loss: 0.0210, MAE Error Percentage: 22.44 %
+2024-07-25 12:58:02,261 - INFO - Epoch 28/50, Loss: 0.0200, Validation Loss: 0.0200, MAE Error Percentage: 22.09 %
+2024-07-25 12:58:02,526 - INFO - Epoch 29/50, Loss: 0.0196, Validation Loss: 0.0191, MAE Error Percentage: 21.71 %
+2024-07-25 12:58:02,785 - INFO - Epoch 30/50, Loss: 0.0200, Validation Loss: 0.0218, MAE Error Percentage: 22.70 %
+2024-07-25 12:58:03,060 - INFO - Epoch 31/50, Loss: 0.0198, Validation Loss: 0.0180, MAE Error Percentage: 21.08 %
+2024-07-25 12:58:03,317 - INFO - Epoch 32/50, Loss: 0.0193, Validation Loss: 0.0187, MAE Error Percentage: 21.36 %
+2024-07-25 12:58:03,588 - INFO - Epoch 33/50, Loss: 0.0193, Validation Loss: 0.0208, MAE Error Percentage: 22.34 %
+2024-07-25 12:58:03,840 - INFO - Epoch 34/50, Loss: 0.0190, Validation Loss: 0.0180, MAE Error Percentage: 20.92 %
+2024-07-25 12:58:04,100 - INFO - Epoch 35/50, Loss: 0.0192, Validation Loss: 0.0197, MAE Error Percentage: 21.81 %
+2024-07-25 12:58:04,358 - INFO - Epoch 36/50, Loss: 0.0185, Validation Loss: 0.0181, MAE Error Percentage: 20.87 %
+2024-07-25 12:58:04,620 - INFO - Epoch 37/50, Loss: 0.0187, Validation Loss: 0.0193, MAE Error Percentage: 21.53 %
+2024-07-25 12:58:04,874 - INFO - Epoch 38/50, Loss: 0.0185, Validation Loss: 0.0163, MAE Error Percentage: 20.20 %
+2024-07-25 12:58:05,124 - INFO - Epoch 39/50, Loss: 0.0189, Validation Loss: 0.0189, MAE Error Percentage: 21.58 %
+2024-07-25 12:58:05,389 - INFO - Epoch 40/50, Loss: 0.0182, Validation Loss: 0.0175, MAE Error Percentage: 20.59 %
+2024-07-25 12:58:05,661 - INFO - Epoch 41/50, Loss: 0.0180, Validation Loss: 0.0186, MAE Error Percentage: 21.19 %
+2024-07-25 12:58:05,935 - INFO - Epoch 42/50, Loss: 0.0180, Validation Loss: 0.0180, MAE Error Percentage: 21.09 %
+2024-07-25 12:58:06,179 - INFO - Epoch 43/50, Loss: 0.0185, Validation Loss: 0.0184, MAE Error Percentage: 21.21 %
+2024-07-25 12:58:06,431 - INFO - Epoch 44/50, Loss: 0.0185, Validation Loss: 0.0173, MAE Error Percentage: 20.52 %
+2024-07-25 12:58:06,678 - INFO - Epoch 45/50, Loss: 0.0178, Validation Loss: 0.0171, MAE Error Percentage: 20.47 %
+2024-07-25 12:58:06,933 - INFO - Epoch 46/50, Loss: 0.0172, Validation Loss: 0.0176, MAE Error Percentage: 20.40 %
+2024-07-25 12:58:07,194 - INFO - Epoch 47/50, Loss: 0.0176, Validation Loss: 0.0164, MAE Error Percentage: 20.13 %
+2024-07-25 12:58:07,451 - INFO - Epoch 48/50, Loss: 0.0178, Validation Loss: 0.0155, MAE Error Percentage: 19.41 %
+2024-07-25 12:58:07,722 - INFO - Epoch 49/50, Loss: 0.0170, Validation Loss: 0.0197, MAE Error Percentage: 21.44 %
+2024-07-25 12:58:07,989 - INFO - Epoch 50/50, Loss: 0.0175, Validation Loss: 0.0158, MAE Error Percentage: 19.35 %
+2024-07-25 12:58:07,990 - INFO - Epoch 50/50, Final Model MAE Error Percentage: 19.41 %
+2024-07-25 12:58:07,994 - INFO - Training done. Model saved. 
+
+2024-07-25 12:58:07,994 - INFO - Training done. Model saved. 
+
+2024-07-25 13:12:48,762 - INFO - models/ElecUseLongTermPredictor-total_elec_use_long_term-in_1_8-out_1_1.pth is loaded. Making predictions.
+2024-07-25 13:12:48,796 - INFO - Done. 
+
+2024-07-25 13:15:47,214 - INFO - Data processing for ElecUseLongTermPredictor-total_elec_use_long_term-in_1_8-out_1_1. Training starts soon. 
+2024-07-25 13:15:47,230 - INFO - Update the model: models/ElecUseLongTermPredictor-total_elec_use_long_term-in_1_8-out_1_1.pth. 
+2024-07-25 13:15:47,230 - INFO - Update the model: models/ElecUseLongTermPredictor-total_elec_use_long_term-in_1_8-out_1_1.pth. 
+2024-07-25 13:15:50,408 - INFO - start_training for ElecUseLongTermPredictor-total_elec_use_long_term-in_1_8-out_1_1. 
+2024-07-25 13:15:50,408 - INFO - start_training for ElecUseLongTermPredictor-total_elec_use_long_term-in_1_8-out_1_1. 
+2024-07-25 13:15:50,661 - INFO - Epoch 1/50, Loss: 0.0177, Validation Loss: 0.0147, MAE Error Percentage: 18.10 %
+2024-07-25 13:15:50,921 - INFO - Epoch 2/50, Loss: 0.0170, Validation Loss: 0.0164, MAE Error Percentage: 18.66 %
+2024-07-25 13:15:51,174 - INFO - Epoch 3/50, Loss: 0.0171, Validation Loss: 0.0165, MAE Error Percentage: 18.35 %
+2024-07-25 13:15:51,424 - INFO - Epoch 4/50, Loss: 0.0162, Validation Loss: 0.0167, MAE Error Percentage: 18.23 %
+2024-07-25 13:15:51,676 - INFO - Epoch 5/50, Loss: 0.0166, Validation Loss: 0.0169, MAE Error Percentage: 18.64 %
+2024-07-25 13:15:51,959 - INFO - Epoch 6/50, Loss: 0.0163, Validation Loss: 0.0154, MAE Error Percentage: 17.35 %
+2024-07-25 13:15:52,271 - INFO - Epoch 7/50, Loss: 0.0161, Validation Loss: 0.0161, MAE Error Percentage: 18.00 %
+2024-07-25 13:15:52,530 - INFO - Epoch 8/50, Loss: 0.0167, Validation Loss: 0.0160, MAE Error Percentage: 18.35 %
+2024-07-25 13:15:52,792 - INFO - Epoch 9/50, Loss: 0.0162, Validation Loss: 0.0162, MAE Error Percentage: 18.55 %
+2024-07-25 13:15:53,053 - INFO - Epoch 10/50, Loss: 0.0163, Validation Loss: 0.0160, MAE Error Percentage: 18.26 %
+2024-07-25 13:15:53,310 - INFO - Epoch 11/50, Loss: 0.0155, Validation Loss: 0.0162, MAE Error Percentage: 18.21 %
+2024-07-25 13:15:53,311 - INFO - Epoch 11/50, Final Model MAE Error Percentage: 18.10 %
+2024-07-25 13:15:53,311 - INFO - Training done. Model saved. 
+
+2024-07-25 13:15:53,311 - INFO - Training done. Model saved. 
+
+2024-07-25 13:16:37,628 - INFO - Data processing for ElecUseShortTermPredictor-test4-Pt-in_24_3-out_6_1. Training starts soon. 
+2024-07-25 13:16:37,658 - INFO - Update the model: models/ElecUseShortTermPredictor-test4-Pt-in_24_3-out_6_1.pth. 
+2024-07-25 13:16:37,660 - INFO - Update the model: models/ElecUseShortTermPredictor-test4-Pt-in_24_3-out_6_1.pth. 
+2024-07-25 13:16:37,664 - INFO - start_training for ElecUseShortTermPredictor-test4-Pt-in_24_3-out_6_1. 
+2024-07-25 13:16:37,664 - INFO - start_training for ElecUseShortTermPredictor-test4-Pt-in_24_3-out_6_1. 
+2024-07-25 13:16:38,615 - INFO - Epoch 1/50, Loss: 0.0896, Validation Loss: 0.0847, MAE Error Percentage: 49.07 %
+2024-07-25 13:16:39,517 - INFO - Epoch 2/50, Loss: 0.0888, Validation Loss: 0.0841, MAE Error Percentage: 48.89 %
+2024-07-25 13:16:40,430 - INFO - Epoch 3/50, Loss: 0.0886, Validation Loss: 0.0842, MAE Error Percentage: 48.89 %
+2024-07-25 13:16:41,309 - INFO - Epoch 4/50, Loss: 0.0884, Validation Loss: 0.0844, MAE Error Percentage: 48.97 %
+2024-07-25 13:16:42,253 - INFO - Epoch 5/50, Loss: 0.0878, Validation Loss: 0.0842, MAE Error Percentage: 48.91 %
+2024-07-25 13:16:43,248 - INFO - Epoch 6/50, Loss: 0.0879, Validation Loss: 0.0834, MAE Error Percentage: 48.66 %
+2024-07-25 13:16:44,141 - INFO - Epoch 7/50, Loss: 0.0877, Validation Loss: 0.0835, MAE Error Percentage: 48.67 %
+2024-07-25 13:16:45,028 - INFO - Epoch 8/50, Loss: 0.0872, Validation Loss: 0.0833, MAE Error Percentage: 48.60 %
+2024-07-25 13:16:46,305 - INFO - Epoch 9/50, Loss: 0.0869, Validation Loss: 0.0836, MAE Error Percentage: 48.73 %
+2024-07-25 13:16:47,363 - INFO - Epoch 10/50, Loss: 0.0873, Validation Loss: 0.0841, MAE Error Percentage: 48.87 %
+2024-07-25 13:16:48,240 - INFO - Epoch 11/50, Loss: 0.0868, Validation Loss: 0.0833, MAE Error Percentage: 48.63 %
+2024-07-25 13:16:49,162 - INFO - Epoch 12/50, Loss: 0.0868, Validation Loss: 0.0842, MAE Error Percentage: 48.90 %
+2024-07-25 13:16:50,086 - INFO - Epoch 13/50, Loss: 0.0866, Validation Loss: 0.0834, MAE Error Percentage: 48.65 %
+2024-07-25 13:16:50,997 - INFO - Epoch 14/50, Loss: 0.0865, Validation Loss: 0.0833, MAE Error Percentage: 48.58 %
+2024-07-25 13:16:51,983 - INFO - Epoch 15/50, Loss: 0.0865, Validation Loss: 0.0836, MAE Error Percentage: 48.72 %
+2024-07-25 13:16:53,119 - INFO - Epoch 16/50, Loss: 0.0862, Validation Loss: 0.0833, MAE Error Percentage: 48.60 %
+2024-07-25 13:16:54,174 - INFO - Epoch 17/50, Loss: 0.0863, Validation Loss: 0.0837, MAE Error Percentage: 48.76 %
+2024-07-25 13:16:55,052 - INFO - Epoch 18/50, Loss: 0.0860, Validation Loss: 0.0840, MAE Error Percentage: 48.87 %
+2024-07-25 13:16:56,262 - INFO - Epoch 19/50, Loss: 0.0862, Validation Loss: 0.0832, MAE Error Percentage: 48.59 %
+2024-07-25 13:16:57,379 - INFO - Epoch 20/50, Loss: 0.0862, Validation Loss: 0.0838, MAE Error Percentage: 48.81 %
+2024-07-25 13:16:58,561 - INFO - Epoch 21/50, Loss: 0.0863, Validation Loss: 0.0841, MAE Error Percentage: 48.91 %
+2024-07-25 13:16:59,430 - INFO - Epoch 22/50, Loss: 0.0862, Validation Loss: 0.0838, MAE Error Percentage: 48.81 %
+2024-07-25 13:17:01,546 - INFO - Epoch 23/50, Loss: 0.0855, Validation Loss: 0.0833, MAE Error Percentage: 48.59 %
+2024-07-25 13:17:02,449 - INFO - Epoch 24/50, Loss: 0.0859, Validation Loss: 0.0835, MAE Error Percentage: 48.72 %
+2024-07-25 13:17:03,370 - INFO - Epoch 25/50, Loss: 0.0857, Validation Loss: 0.0837, MAE Error Percentage: 48.79 %
+2024-07-25 13:17:04,351 - INFO - Epoch 26/50, Loss: 0.0857, Validation Loss: 0.0833, MAE Error Percentage: 48.66 %
+2024-07-25 13:17:06,397 - INFO - Epoch 27/50, Loss: 0.0857, Validation Loss: 0.0835, MAE Error Percentage: 48.72 %
+2024-07-25 13:17:07,664 - INFO - Epoch 28/50, Loss: 0.0858, Validation Loss: 0.0834, MAE Error Percentage: 48.69 %
+2024-07-25 13:17:09,802 - INFO - Epoch 29/50, Loss: 0.0854, Validation Loss: 0.0837, MAE Error Percentage: 48.80 %
+2024-07-25 13:17:09,802 - INFO - Epoch 29/50, Final Model MAE Error Percentage: 48.59 %
+2024-07-25 13:17:09,802 - INFO - Training done. Model saved. 
+
+2024-07-25 13:17:09,803 - INFO - Training done. Model saved. 
+
+2024-07-25 13:17:09,804 - INFO - Data processing for ElecUseShortTermPredictor-test5-Pt-in_24_3-out_6_1. Training starts soon. 
+2024-07-25 13:17:09,854 - INFO - Update the model: models/ElecUseShortTermPredictor-test5-Pt-in_24_3-out_6_1.pth. 
+2024-07-25 13:17:09,854 - INFO - Update the model: models/ElecUseShortTermPredictor-test5-Pt-in_24_3-out_6_1.pth. 
+2024-07-25 13:17:09,856 - INFO - start_training for ElecUseShortTermPredictor-test5-Pt-in_24_3-out_6_1. 
+2024-07-25 13:17:09,856 - INFO - start_training for ElecUseShortTermPredictor-test5-Pt-in_24_3-out_6_1. 
+2024-07-25 13:17:10,811 - INFO - Epoch 1/50, Loss: 0.0811, Validation Loss: 0.0821, MAE Error Percentage: 49.93 %
+2024-07-25 13:17:11,808 - INFO - Epoch 2/50, Loss: 0.0803, Validation Loss: 0.0819, MAE Error Percentage: 49.85 %
+2024-07-25 13:17:12,738 - INFO - Epoch 3/50, Loss: 0.0806, Validation Loss: 0.0815, MAE Error Percentage: 49.72 %
+2024-07-25 13:17:13,709 - INFO - Epoch 4/50, Loss: 0.0802, Validation Loss: 0.0813, MAE Error Percentage: 49.64 %
+2024-07-25 13:17:14,611 - INFO - Epoch 5/50, Loss: 0.0801, Validation Loss: 0.0811, MAE Error Percentage: 49.62 %
+2024-07-25 13:17:15,511 - INFO - Epoch 6/50, Loss: 0.0794, Validation Loss: 0.0812, MAE Error Percentage: 49.41 %
+2024-07-25 13:17:16,450 - INFO - Epoch 7/50, Loss: 0.0790, Validation Loss: 0.0803, MAE Error Percentage: 49.17 %
+2024-07-25 13:17:17,424 - INFO - Epoch 8/50, Loss: 0.0785, Validation Loss: 0.0801, MAE Error Percentage: 49.17 %
+2024-07-25 13:17:18,378 - INFO - Epoch 9/50, Loss: 0.0784, Validation Loss: 0.0796, MAE Error Percentage: 48.89 %
+2024-07-25 13:17:19,295 - INFO - Epoch 10/50, Loss: 0.0779, Validation Loss: 0.0789, MAE Error Percentage: 48.73 %
+2024-07-25 13:17:20,176 - INFO - Epoch 11/50, Loss: 0.0774, Validation Loss: 0.0792, MAE Error Percentage: 48.80 %
+2024-07-25 13:17:21,107 - INFO - Epoch 12/50, Loss: 0.0768, Validation Loss: 0.0779, MAE Error Percentage: 48.51 %
+2024-07-25 13:17:22,032 - INFO - Epoch 13/50, Loss: 0.0765, Validation Loss: 0.0781, MAE Error Percentage: 48.33 %
+2024-07-25 13:17:23,014 - INFO - Epoch 14/50, Loss: 0.0755, Validation Loss: 0.0783, MAE Error Percentage: 48.57 %
+2024-07-25 13:17:23,962 - INFO - Epoch 15/50, Loss: 0.0751, Validation Loss: 0.0774, MAE Error Percentage: 48.29 %
+2024-07-25 13:17:25,871 - INFO - Epoch 16/50, Loss: 0.0748, Validation Loss: 0.0765, MAE Error Percentage: 47.94 %
+2024-07-25 13:17:26,810 - INFO - Epoch 17/50, Loss: 0.0739, Validation Loss: 0.0758, MAE Error Percentage: 47.76 %
+2024-07-25 13:17:27,801 - INFO - Epoch 18/50, Loss: 0.0732, Validation Loss: 0.0758, MAE Error Percentage: 47.75 %
+2024-07-25 13:17:28,724 - INFO - Epoch 19/50, Loss: 0.0730, Validation Loss: 0.0766, MAE Error Percentage: 47.79 %
+2024-07-25 13:17:30,915 - INFO - Epoch 20/50, Loss: 0.0720, Validation Loss: 0.0753, MAE Error Percentage: 47.53 %
+2024-07-25 13:17:31,878 - INFO - Epoch 21/50, Loss: 0.0715, Validation Loss: 0.0752, MAE Error Percentage: 47.31 %
+2024-07-25 13:17:32,832 - INFO - Epoch 22/50, Loss: 0.0712, Validation Loss: 0.0741, MAE Error Percentage: 46.76 %
+2024-07-25 13:17:33,748 - INFO - Epoch 23/50, Loss: 0.0709, Validation Loss: 0.0740, MAE Error Percentage: 46.79 %
+2024-07-25 13:17:34,729 - INFO - Epoch 24/50, Loss: 0.0701, Validation Loss: 0.0730, MAE Error Percentage: 46.48 %
+2024-07-25 13:17:35,641 - INFO - Epoch 25/50, Loss: 0.0694, Validation Loss: 0.0719, MAE Error Percentage: 46.03 %
+2024-07-25 13:17:37,544 - INFO - Epoch 26/50, Loss: 0.0687, Validation Loss: 0.0716, MAE Error Percentage: 46.13 %
+2024-07-25 13:17:38,746 - INFO - Epoch 27/50, Loss: 0.0685, Validation Loss: 0.0701, MAE Error Percentage: 45.50 %
+2024-07-25 13:17:39,875 - INFO - Epoch 28/50, Loss: 0.0675, Validation Loss: 0.0700, MAE Error Percentage: 45.41 %
+2024-07-25 13:17:40,867 - INFO - Epoch 29/50, Loss: 0.0670, Validation Loss: 0.0698, MAE Error Percentage: 45.16 %
+2024-07-25 13:17:41,872 - INFO - Epoch 30/50, Loss: 0.0665, Validation Loss: 0.0685, MAE Error Percentage: 44.73 %
+2024-07-25 13:17:42,846 - INFO - Epoch 31/50, Loss: 0.0651, Validation Loss: 0.0665, MAE Error Percentage: 43.79 %
+2024-07-25 13:17:43,755 - INFO - Epoch 32/50, Loss: 0.0649, Validation Loss: 0.0665, MAE Error Percentage: 44.08 %
+2024-07-25 13:17:44,662 - INFO - Epoch 33/50, Loss: 0.0639, Validation Loss: 0.0641, MAE Error Percentage: 43.21 %
+2024-07-25 13:17:45,673 - INFO - Epoch 34/50, Loss: 0.0634, Validation Loss: 0.0653, MAE Error Percentage: 43.71 %
+2024-07-25 13:17:46,661 - INFO - Epoch 35/50, Loss: 0.0637, Validation Loss: 0.0645, MAE Error Percentage: 43.32 %
+2024-07-25 13:17:47,626 - INFO - Epoch 36/50, Loss: 0.0626, Validation Loss: 0.0632, MAE Error Percentage: 42.66 %
+2024-07-25 13:17:48,653 - INFO - Epoch 37/50, Loss: 0.0618, Validation Loss: 0.0614, MAE Error Percentage: 41.92 %
+2024-07-25 13:17:49,615 - INFO - Epoch 38/50, Loss: 0.0604, Validation Loss: 0.0619, MAE Error Percentage: 41.99 %
+2024-07-25 13:17:50,561 - INFO - Epoch 39/50, Loss: 0.0602, Validation Loss: 0.0604, MAE Error Percentage: 41.44 %
+2024-07-25 13:17:51,513 - INFO - Epoch 40/50, Loss: 0.0596, Validation Loss: 0.0614, MAE Error Percentage: 41.46 %
+2024-07-25 13:17:52,524 - INFO - Epoch 41/50, Loss: 0.0596, Validation Loss: 0.0599, MAE Error Percentage: 41.27 %
+2024-07-25 13:17:53,562 - INFO - Epoch 42/50, Loss: 0.0586, Validation Loss: 0.0579, MAE Error Percentage: 40.52 %
+2024-07-25 13:17:54,643 - INFO - Epoch 43/50, Loss: 0.0575, Validation Loss: 0.0572, MAE Error Percentage: 40.11 %
+2024-07-25 13:17:55,618 - INFO - Epoch 44/50, Loss: 0.0566, Validation Loss: 0.0570, MAE Error Percentage: 40.11 %
+2024-07-25 13:17:56,582 - INFO - Epoch 45/50, Loss: 0.0562, Validation Loss: 0.0554, MAE Error Percentage: 38.88 %
+2024-07-25 13:17:57,541 - INFO - Epoch 46/50, Loss: 0.0545, Validation Loss: 0.0546, MAE Error Percentage: 38.76 %
+2024-07-25 13:17:58,594 - INFO - Epoch 47/50, Loss: 0.0541, Validation Loss: 0.0536, MAE Error Percentage: 38.70 %
+2024-07-25 13:17:59,579 - INFO - Epoch 48/50, Loss: 0.0531, Validation Loss: 0.0540, MAE Error Percentage: 38.50 %
+2024-07-25 13:18:00,513 - INFO - Epoch 49/50, Loss: 0.0530, Validation Loss: 0.0513, MAE Error Percentage: 37.62 %
+2024-07-25 13:18:01,471 - INFO - Epoch 50/50, Loss: 0.0526, Validation Loss: 0.0509, MAE Error Percentage: 37.52 %
+2024-07-25 13:18:01,475 - INFO - Epoch 50/50, Final Model MAE Error Percentage: 37.52 %
+2024-07-25 13:18:01,481 - INFO - Training done. Model saved. 
+
+2024-07-25 13:18:01,482 - INFO - Training done. Model saved. 
+
+2024-07-25 13:18:01,483 - INFO - Data processing for ElecUseShortTermPredictor-test6-Pt-in_24_3-out_6_1. Training starts soon. 
+2024-07-25 13:18:01,535 - INFO - Update the model: models/ElecUseShortTermPredictor-test6-Pt-in_24_3-out_6_1.pth. 
+2024-07-25 13:18:01,536 - INFO - Update the model: models/ElecUseShortTermPredictor-test6-Pt-in_24_3-out_6_1.pth. 
+2024-07-25 13:18:01,540 - INFO - start_training for ElecUseShortTermPredictor-test6-Pt-in_24_3-out_6_1. 
+2024-07-25 13:18:01,540 - INFO - start_training for ElecUseShortTermPredictor-test6-Pt-in_24_3-out_6_1. 
+2024-07-25 13:18:02,551 - INFO - Epoch 1/50, Loss: 0.0874, Validation Loss: 0.0844, MAE Error Percentage: 50.71 %
+2024-07-25 13:18:03,553 - INFO - Epoch 2/50, Loss: 0.0824, Validation Loss: 0.0838, MAE Error Percentage: 50.57 %
+2024-07-25 13:18:04,450 - INFO - Epoch 3/50, Loss: 0.0817, Validation Loss: 0.0834, MAE Error Percentage: 50.39 %
+2024-07-25 13:18:05,451 - INFO - Epoch 4/50, Loss: 0.0812, Validation Loss: 0.0827, MAE Error Percentage: 50.11 %
+2024-07-25 13:18:06,452 - INFO - Epoch 5/50, Loss: 0.0800, Validation Loss: 0.0809, MAE Error Percentage: 49.54 %
+2024-07-25 13:18:07,467 - INFO - Epoch 6/50, Loss: 0.0794, Validation Loss: 0.0808, MAE Error Percentage: 49.30 %
+2024-07-25 13:18:08,462 - INFO - Epoch 7/50, Loss: 0.0779, Validation Loss: 0.0802, MAE Error Percentage: 49.08 %
+2024-07-25 13:18:09,458 - INFO - Epoch 8/50, Loss: 0.0768, Validation Loss: 0.0795, MAE Error Percentage: 48.82 %
+2024-07-25 13:18:10,433 - INFO - Epoch 9/50, Loss: 0.0755, Validation Loss: 0.0783, MAE Error Percentage: 48.21 %
+2024-07-25 13:18:11,390 - INFO - Epoch 10/50, Loss: 0.0753, Validation Loss: 0.0766, MAE Error Percentage: 47.69 %
+2024-07-25 13:18:12,380 - INFO - Epoch 11/50, Loss: 0.0734, Validation Loss: 0.0745, MAE Error Percentage: 46.98 %
+2024-07-25 13:18:13,361 - INFO - Epoch 12/50, Loss: 0.0724, Validation Loss: 0.0731, MAE Error Percentage: 46.18 %
+2024-07-25 13:18:14,331 - INFO - Epoch 13/50, Loss: 0.0711, Validation Loss: 0.0735, MAE Error Percentage: 46.20 %
+2024-07-25 13:18:15,274 - INFO - Epoch 14/50, Loss: 0.0703, Validation Loss: 0.0741, MAE Error Percentage: 46.53 %
+2024-07-25 13:18:16,174 - INFO - Epoch 15/50, Loss: 0.0687, Validation Loss: 0.0690, MAE Error Percentage: 44.78 %
+2024-07-25 13:18:17,122 - INFO - Epoch 16/50, Loss: 0.0672, Validation Loss: 0.0685, MAE Error Percentage: 44.23 %
+2024-07-25 13:18:18,100 - INFO - Epoch 17/50, Loss: 0.0652, Validation Loss: 0.0670, MAE Error Percentage: 43.72 %
+2024-07-25 13:18:19,067 - INFO - Epoch 18/50, Loss: 0.0642, Validation Loss: 0.0643, MAE Error Percentage: 42.74 %
+2024-07-25 13:18:20,018 - INFO - Epoch 19/50, Loss: 0.0632, Validation Loss: 0.0650, MAE Error Percentage: 42.93 %
+2024-07-25 13:18:20,957 - INFO - Epoch 20/50, Loss: 0.0616, Validation Loss: 0.0621, MAE Error Percentage: 41.73 %
+2024-07-25 13:18:22,988 - INFO - Epoch 21/50, Loss: 0.0605, Validation Loss: 0.0614, MAE Error Percentage: 41.09 %
+2024-07-25 13:18:24,012 - INFO - Epoch 22/50, Loss: 0.0591, Validation Loss: 0.0604, MAE Error Percentage: 40.88 %
+2024-07-25 13:18:24,953 - INFO - Epoch 23/50, Loss: 0.0586, Validation Loss: 0.0585, MAE Error Percentage: 40.00 %
+2024-07-25 13:18:25,941 - INFO - Epoch 24/50, Loss: 0.0569, Validation Loss: 0.0569, MAE Error Percentage: 39.58 %
+2024-07-25 13:18:26,889 - INFO - Epoch 25/50, Loss: 0.0544, Validation Loss: 0.0557, MAE Error Percentage: 39.04 %
+2024-07-25 13:18:27,817 - INFO - Epoch 26/50, Loss: 0.0539, Validation Loss: 0.0558, MAE Error Percentage: 38.85 %
+2024-07-25 13:18:28,758 - INFO - Epoch 27/50, Loss: 0.0522, Validation Loss: 0.0552, MAE Error Percentage: 38.78 %
+2024-07-25 13:18:29,661 - INFO - Epoch 28/50, Loss: 0.0530, Validation Loss: 0.0533, MAE Error Percentage: 38.07 %
+2024-07-25 13:18:30,587 - INFO - Epoch 29/50, Loss: 0.0514, Validation Loss: 0.0516, MAE Error Percentage: 37.24 %
+2024-07-25 13:18:31,531 - INFO - Epoch 30/50, Loss: 0.0503, Validation Loss: 0.0515, MAE Error Percentage: 36.80 %
+2024-07-25 13:18:32,431 - INFO - Epoch 31/50, Loss: 0.0488, Validation Loss: 0.0509, MAE Error Percentage: 36.71 %
+2024-07-25 13:18:33,301 - INFO - Epoch 32/50, Loss: 0.0477, Validation Loss: 0.0504, MAE Error Percentage: 36.51 %
+2024-07-25 13:18:34,260 - INFO - Epoch 33/50, Loss: 0.0481, Validation Loss: 0.0496, MAE Error Percentage: 36.30 %
+2024-07-25 13:18:35,124 - INFO - Epoch 34/50, Loss: 0.0468, Validation Loss: 0.0487, MAE Error Percentage: 35.88 %
+2024-07-25 13:18:36,019 - INFO - Epoch 35/50, Loss: 0.0461, Validation Loss: 0.0474, MAE Error Percentage: 35.35 %
+2024-07-25 13:18:36,899 - INFO - Epoch 36/50, Loss: 0.0448, Validation Loss: 0.0451, MAE Error Percentage: 34.51 %
+2024-07-25 13:18:37,864 - INFO - Epoch 37/50, Loss: 0.0443, Validation Loss: 0.0452, MAE Error Percentage: 34.27 %
+2024-07-25 13:18:38,778 - INFO - Epoch 38/50, Loss: 0.0424, Validation Loss: 0.0440, MAE Error Percentage: 33.54 %
+2024-07-25 13:18:39,681 - INFO - Epoch 39/50, Loss: 0.0435, Validation Loss: 0.0435, MAE Error Percentage: 33.93 %
+2024-07-25 13:18:40,647 - INFO - Epoch 40/50, Loss: 0.0423, Validation Loss: 0.0412, MAE Error Percentage: 32.64 %
+2024-07-25 13:18:41,549 - INFO - Epoch 41/50, Loss: 0.0410, Validation Loss: 0.0406, MAE Error Percentage: 32.20 %
+2024-07-25 13:18:42,561 - INFO - Epoch 42/50, Loss: 0.0408, Validation Loss: 0.0415, MAE Error Percentage: 32.55 %
+2024-07-25 13:18:43,471 - INFO - Epoch 43/50, Loss: 0.0402, Validation Loss: 0.0393, MAE Error Percentage: 31.75 %
+2024-07-25 13:18:44,399 - INFO - Epoch 44/50, Loss: 0.0393, Validation Loss: 0.0384, MAE Error Percentage: 32.03 %
+2024-07-25 13:18:45,347 - INFO - Epoch 45/50, Loss: 0.0384, Validation Loss: 0.0376, MAE Error Percentage: 31.13 %
+2024-07-25 13:18:46,235 - INFO - Epoch 46/50, Loss: 0.0379, Validation Loss: 0.0364, MAE Error Percentage: 30.70 %
+2024-07-25 13:18:47,106 - INFO - Epoch 47/50, Loss: 0.0377, Validation Loss: 0.0379, MAE Error Percentage: 30.94 %
+2024-07-25 13:18:47,991 - INFO - Epoch 48/50, Loss: 0.0374, Validation Loss: 0.0360, MAE Error Percentage: 30.37 %
+2024-07-25 13:18:48,891 - INFO - Epoch 49/50, Loss: 0.0366, Validation Loss: 0.0376, MAE Error Percentage: 30.69 %
+2024-07-25 13:18:49,820 - INFO - Epoch 50/50, Loss: 0.0363, Validation Loss: 0.0358, MAE Error Percentage: 29.98 %
+2024-07-25 13:18:49,823 - INFO - Epoch 50/50, Final Model MAE Error Percentage: 29.98 %
+2024-07-25 13:18:49,827 - INFO - Training done. Model saved. 
+
+2024-07-25 13:18:49,828 - INFO - Training done. Model saved. 
+
