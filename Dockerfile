@@ -5,14 +5,14 @@ FROM python:3.11-slim AS build-stage
 LABEL maintainer="liaoshuchi123@gmail.com"
 
 # Set the working directory in the container
-RUN mkdir -p /ng_eu
-WORKDIR /ng_eu
+RUN mkdir -p /ng_energy
+WORKDIR /ng_energy
 
 # Copy the current directory contents into the container at /ng_eu
-COPY . /ng_eu
+COPY . /ng_energy
 
 # Copy requirements.txt and install dependencies
-COPY requirements.txt /ng_eu/
+COPY requirements.txt /ng_energy/
 
 # Install any needed packages specified in requirements.txt
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -27,11 +27,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 FROM python:3.11-slim
 
 # Set the working directory in the container
-RUN mkdir -p /ng_eu
-WORKDIR /ng_eu
+RUN mkdir -p /ng_energy
+WORKDIR /ng_energy
 
 # Copy the current directory contents into the container at /ng_eu
-COPY . /ng_eu
+COPY . /ng_energy
 
 # Copy installed dependencies from the build stage
 COPY --from=build-stage /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages

@@ -1,4 +1,4 @@
-from fastapi import FastAPI, File, UploadFile, HTTPException, Request, Query
+from fastapi import FastAPI, File, UploadFile, HTTPException, Query
 from fastapi.responses import JSONResponse
 import numpy as np
 import pandas as pd
@@ -7,6 +7,11 @@ from typing import Dict, List, Union
 from Predictor import ElecUseShortTermPredictor, ElecUseLongTermPredictor, AirCondTempPredictor
 from Optimizer import GenericOptimizer
 from utils import prepare_long_term_data
+from constants import (LSTM_UNIT, EUST_FC_UNIT,
+                       FEATURE, EULT_FC_UNIT, EULT_MODEL_NAME,
+                       PRIORITY_LIST, GRU_UNIT, AC_FC_UNIT,
+                       EXTRA_VAR_NUM, ROOM_VAR_NUM
+                       )
 import gc
 import json
 import os
@@ -21,21 +26,23 @@ app = FastAPI()
 @app.get("/")
 async def root():
     return {"message": "welcome!"}
-   # return {"message": "hello!"}
 
 
-class Elec_Use_Short_Term_Input(BaseModel):
+# return {"message": "hello!"}
+
+
+class ElecUseShortTermInput(BaseModel):
     data: dict[str, List[Union[int, float]]]
 
 
-class Predict_AC_Temp_Input(BaseModel):
+class PredictACTempInput(BaseModel):
     data: dict[str, Dict[str, List[Union[int, float]]]]
 
 
 @app.post('/train/elec_use_short_term')
 async def train_elec_use_short_term(
         file: UploadFile = File(...),
-        timesteps: int = Query(24, alias="TrainStep"),  # 输入时间步长
+        timesteps: int = Query(24, alias="TrainStep"),  # 历史时间步长
         features: int = Query(1, alias="FeatureNum"),  # 输入特征数量
         predictsteps: int = Query(1, alias="PredictStep"),  # 预测时间步长
         epochs: int = Query(50, alias="Epochs"),  # 训练轮数
@@ -45,7 +52,7 @@ async def train_elec_use_short_term(
     """
     根据 input_type 和其他参数训练模型。
     :param file: training data
-    :param timesteps: 输入时间步长。
+    :param timesteps: 历史时间步长。
     :param features: 输入特征数量。
     :param predictsteps: 预测时间步长。
     :param epochs: 训练轮数。
@@ -58,9 +65,10 @@ async def train_elec_use_short_term(
                                               output_shape=(predictsteps, 1))
 
         # 定义神经网络结构
-        predictor.model_layers = [('lstm', int(50), float(0.5)),
-                                  ('lstm', int(100), float(0.4)),
-                                  ('linear', int(64), float(0.3))]
+        predictor.model_layers = [('lstm', int(LSTM_UNIT[0][0]), float(LSTM_UNIT[0][1])),
+                                  ('lstm', int(LSTM_UNIT[1][0]), float(LSTM_UNIT[1][1])),
+                                  ('linear', int(EUST_FC_UNIT[0][0]), float(EUST_FC_UNIT[0][1]))
+                                  ]
         if file:
             json_content = await file.read()
             json_data = json.loads(json_content.decode('utf-8'))
@@ -99,15 +107,15 @@ async def train_elec_use_short_term(
 @app.post("/predict/elec_use_short_term")
 # async def predict(input_data: InputData):
 def predict_elec_use_short_term(
-        input_data: Elec_Use_Short_Term_Input,
-        timesteps: int = Query(24, alias="TrainStep"),  # 输入时间步长
+        input_data: ElecUseShortTermInput,
+        timesteps: int = Query(24, alias="TrainStep"),  # 历史时间步长
         features: int = Query(1, alias="FeatureNum"),  # 输入特征数量
         predictsteps: int = Query(1, alias="PredictStep"),  # 预测时间步长
 ):
     """
     根据输入数据进行预测。
     :param input_data: InputData 实例，包含数据。
-    :param timesteps: 输入时间步长。
+    :param timesteps: 历史时间步长。
     :param features: 输入特征数量。
     :param predictsteps: 预测时间步长。
     """
@@ -120,12 +128,13 @@ def predict_elec_use_short_term(
                                               output_shape=(predictsteps, 1))
 
         # 构建神经网络结构，需要和训练时的结构保持一致，不然无法加载模型
-        predictor.model_layers = [('lstm', int(50), float(0.5)),
-                                  ('lstm', int(100), float(0.4)),
-                                  ('linear', int(64), float(0.3))]
+        predictor.model_layers = [('lstm', int(LSTM_UNIT[0][0]), float(LSTM_UNIT[0][1])),
+                                  ('lstm', int(LSTM_UNIT[1][0]), float(LSTM_UNIT[1][1])),
+                                  ('linear', int(EUST_FC_UNIT[0][0]), float(EUST_FC_UNIT[0][1]))
+                                  ]
 
         # bug, if input_data['data'], gives error:
-        #Elec_Use_Short_Term_Input' object is not subscriptable
+        #ElecUseShortTermInput' object is not subscriptable
         input_data = input_data.data
 
         # 预处理input_data中的数据，
@@ -194,23 +203,21 @@ async def train_total_elec_use_long_term(
     input_data = prepare_long_term_data(weather_content, usage_content, train=True)
     # train_data is a dataframe with columns of
     # [Year  Month  Day  Hour  Week of day  Weekend or holiday
-    # Temperature   Humidity  Precipitation  Historical usage Usage]
-
-    features = ['Day', 'Hour', 'Week of day', 'Weekend or holiday',
-                'Temperature', 'Humidity', 'Precipitation', 'Historical usage', 'Usage']
+    # Temperature   Humidity  Precipitation  Historical usage|Usage]
 
     try:
-        predictor = ElecUseLongTermPredictor(input_shape=(1, len(features) - 1),  # input 没有最后‘usage’列
+        predictor = ElecUseLongTermPredictor(input_shape=(1, len(FEATURE) - 1),  # input 没有最后‘usage’列
                                              output_shape=(1, 1),  # 只预测用电量
-                                             features=features)
+                                             features=FEATURE)
 
         #定义模型名称（只有一个模型）
-        predictor.model_name = 'total_elec_use_long_term'
+        predictor.model_name = EULT_MODEL_NAME
 
         # 定义神经网络结构(线性网络结构，数据不足以做rnn网络）
-        predictor.model_layers = [('linear', int(128), float(0.4)),
-                                  ('linear', int(128), float(0.4)),
-                                  ('linear', int(64), float(0.3))]
+        predictor.model_layers = [('linear', int(EULT_FC_UNIT[0][0]), float(EULT_FC_UNIT[0][1])),
+                                  ('linear', int(EULT_FC_UNIT[1][0]), float(EULT_FC_UNIT[1][1])),
+                                  ('linear', int(EULT_FC_UNIT[2][0]), float(EULT_FC_UNIT[2][0]))
+                                  ]
 
         # 再次处理数据
         # input_data 是dataframe
@@ -258,8 +265,7 @@ async def predict_total_elec_use_long_term(
     # [Year  Month  Day  Hour  Week of day  Weekend or holiday
     # Temperature   Humidity  Precipitation  Historical_usage]
 
-    features = ['Day', 'Hour', 'Week of day', 'Weekend or holiday',
-                'Temperature', 'Humidity', 'Precipitation', 'Historical usage']
+    features = FEATURE[:-1]  # 没有usage data
 
     try:
         predictor = ElecUseLongTermPredictor(input_shape=(1, len(features)),
@@ -267,12 +273,13 @@ async def predict_total_elec_use_long_term(
                                              features=features)
 
         # 定义模型名称（只有一个模型）
-        predictor.model_name = 'total_elec_use_long_term'
+        predictor.model_name = EULT_MODEL_NAME
 
         # 定义神经网络结构(线性网络结构，数据不足以做rnn网络）
-        predictor.model_layers = [('linear', int(128), float(0.4)),
-                                  ('linear', int(128), float(0.4)),
-                                  ('linear', int(64), float(0.3))]
+        predictor.model_layers = [('linear', int(EULT_FC_UNIT[0][0]), float(EULT_FC_UNIT[0][1])),
+                                  ('linear', int(EULT_FC_UNIT[1][0]), float(EULT_FC_UNIT[1][1])),
+                                  ('linear', int(EULT_FC_UNIT[2][0]), float(EULT_FC_UNIT[2][0]))
+                                  ]
 
         # 再次处理数据
         # input_data 是dataframe
@@ -296,60 +303,57 @@ async def predict_total_elec_use_long_term(
 
 @app.post('/train/ac_temp')
 async def train_ac_temp(
-        setup_file: UploadFile = File(...),  # training data, 包含SFWD，ROOMTEMP这些
-        temp_file: UploadFile = File(...),  # 温度湿度表
-        timesteps: int = Query(1, alias="TrainStep"),  # 输入时间步长
+        data_file: UploadFile = File(...),  # training data, 包含SFWD，ROOMTEMP这些
+        timesteps: int = Query(1, alias="TrainStep"),  # 历史时间步长
         predictsteps: int = Query(1, alias="PredictStep"),  # 预测时间步长
         epochs: int = Query(50, alias="Epochs"),  # 训练轮数
         batchsize: int = Query(64, alias="BatchSize"),  # 批量大小
         learningrate: float = Query(0.001, alias='LearningRate')  # 学习率
 ):
     """
-    :param setup_file: 包含SFWD，ROOMTEMP等与AC相关的历史数据
-    :param temp_file: 温度湿度历史数据
-    :param timesteps: 输入时间步长。
+    :param data_file: 包含SFWD，ROOMTEMP等与AC相关的历史数据
+    :param timesteps: 历史时间步长。
     :param predictsteps: 预测时间步长。
     :param epochs: 训练轮数。
     :param batchsize: 批量大小。
     :param learningrate: 优化器学习率
     """
     # Check if the second file is a JSON
-    if setup_file.content_type != 'application/json' or temp_file.content_type != 'application/json':
+    if data_file.content_type != 'application/json':
         raise HTTPException(status_code=400, detail="The files must be JSON files.")
 
-    model_name, _ = os.path.splitext(setup_file.filename)
+    model_name, _ = os.path.splitext(data_file.filename)
     # Read files if the file types are correct
-    setup_data = await setup_file.read()
-    temp_data = await  temp_file.read()
-    input_setup_data = json.loads(setup_data.decode('utf-8'))
-    input_temp_data = json.loads(temp_data.decode('utf-8'))
+    json_content = await data_file.read()
+    json_data = json.loads(json_content.decode('utf-8'))
 
-    df1 = pd.DataFrame(input_temp_data)
-    df2 = pd.DataFrame(input_temp_data)
-    df = pd.concat([df1, df2], axis=1)
-
-    priority_list = ["Pt", "TEMPROOM", "TEMPOUT", "HUMIDITY", "SFWD", "HFWD", "SPEED",
-                     "TEMPSET", "SFWDSDZ"]
+    # 文件名就是模型名，或者说楼层名，比如K8-1-1
+    # 里面是字典形式的数据如：{’SFWD':[], 'ROOMTEMP':[]},可由爬虫工具得到。
+    df = pd.DataFrame(json_data)
 
     in_feature_num = df.shape[1]
-    out_feature_num = int(int((df.shape[1] - 6) / 3) + 1)  # 房间数目加1（总功率）
+    if (df.shape[1] - EXTRA_VAR_NUM) % ROOM_VAR_NUM == 0:  # 如果不能整除，说明多（少）数据。
+        out_feature_num = int(int((df.shape[1] - EXTRA_VAR_NUM) / ROOM_VAR_NUM) + 1)  # 房间数目加1（总功率）
+    else:
+        raise ValueError("room numbers is not an integer, check your data. ")
 
     try:
         # output_shape[1] = 1, 只有用电量需要预测
         predictor = AirCondTempPredictor(input_shape=(timesteps, in_feature_num),
                                          output_shape=(predictsteps, out_feature_num),
-                                         priority_list=priority_list)
+                                         priority_list=PRIORITY_LIST)
 
         # 定义模型名称：
         predictor.model_name = model_name
         # 定义神经网络结构
-        predictor.model_layers = [('gru', int(50), float(0.5)),
-                                  ('gru', int(100), float(0.5)),
-                                  ('linear', int(128), float(0.4)),
-                                  ('linear', int(64), float(0.4))]
+        predictor.model_layers = [('gru', int(GRU_UNIT[0][0]), float(GRU_UNIT[0][1])),
+                                  ('gru', int(GRU_UNIT[1][0]), float(GRU_UNIT[1][1])),
+                                  ('linear', int(AC_FC_UNIT[0][0]), float(AC_FC_UNIT[0][1])),
+                                  ('linear', int(AC_FC_UNIT[1][0]), float(AC_FC_UNIT[1][1]))]
 
-        # 预处理数据
-        data = predictor.preprocess_data(df)
+        # 预处理数据:将df column按照priority list排序并返回2d array
+        data, data_columns = predictor.preprocess_data(df)
+
         X_train, y_train, X_test, y_test = predictor.prepare_xy(data)
 
         predictor.train_model(X_train, y_train, X_test, y_test,
@@ -368,53 +372,50 @@ async def train_ac_temp(
 @app.post("/predict/ac_temp")
 # async def predict(input_data: InputData):
 def predict_ac_temp(
-        input_data: Predict_AC_Temp_Input,
-        timesteps: int = Query(1, alias="TrainStep"),  # 输入时间步长
+        input_data: PredictACTempInput,
+        timesteps: int = Query(1, alias="TrainStep"),  # 历史时间步长
         predictsteps: int = Query(1, alias="PredictStep"),  # 预测时间步长
 ):
     """
     根据输入数据进行预测。
     :param input_data: InputData 实例，包含温度数据等。格式为{data:{楼层：{’SFWD':[]...}...}}
-    :param timesteps: 输入时间步长。
+    :param timesteps: 历史时间步长。
     :param predictsteps: 预测时间步长。
     """
     try:
-        priority_list = ["Pt", "TEMPROOM", "TEMPOUT", "HUMIDITY", "SFWD", "HFWD", "SPEED",
-                         "TEMPSET", "SFWDSDZ"]
         predictions = {}
-
         # 开始d对每层楼的模型进行预测
         for key, value in input_data.data.items():
-            in_feature_num = len(value)
-            out_feature_num = int(int((len(value) - 6) / 3) + 1)  # 房间数目加1（总功率）
+
+            df = pd.DataFrame(value)  # 提取每个楼层中个房间ac信息value={'SFWD':[..], ...}
+
+            in_feature_num = df.shape[1]
+            if (df.shape[1] - EXTRA_VAR_NUM) % ROOM_VAR_NUM == 0:  # 如果不能整除，说明多（少）数据。
+                out_feature_num = int(int((df.shape[1] - EXTRA_VAR_NUM) / ROOM_VAR_NUM) + 1)  # 房间数目加1（总功率）
+            else:
+                raise ValueError("room numbers is not an integer, check your data. ")
 
             predictor = AirCondTempPredictor(input_shape=(timesteps, in_feature_num),
                                              output_shape=(predictsteps, out_feature_num),
-                                             priority_list=priority_list)
+                                             priority_list=PRIORITY_LIST)
 
             # 模型名称
             predictor.model_name = key
             # 模型神经网络结构
-            predictor.model_layers = [('gru', int(50), float(0.5)),
-                                      ('gru', int(100), float(0.5)),
-                                      ('linear', int(128), float(0.4)),
-                                      ('linear', int(64), float(0.4))]
+            predictor.model_layers = [('gru', int(GRU_UNIT[0][0]), float(GRU_UNIT[0][1])),
+                                      ('gru', int(GRU_UNIT[1][0]), float(GRU_UNIT[1][1])),
+                                      ('linear', int(AC_FC_UNIT[0][0]), float(AC_FC_UNIT[0][1])),
+                                      ('linear', int(AC_FC_UNIT[1][0]), float(AC_FC_UNIT[1][1]))]
 
-            df = pd.DataFrame(value)
-
-            data = predictor.preprocess_data(df)
-            data = data.reshape(predictsteps, out_feature_num)
-
+            # 预处理数据:将df column按照priority list排序并返回2d array
+            data, data_columns = predictor.preprocess_data(df)
+            data = data.reshape(timesteps, in_feature_num)  # 保证 shape=[steps, in_feature_num)
             # 进行预测
-            prediction = predictor.predict(data)
-            prediction = prediction.tolist()
+            prediction = predictor.predict(data)  # 输入格式[predictsteps, out_feature_num]
 
-            result = {'下一小时预测室内温度': prediction[:-1],
-                      '下一小时预测总功率': prediction[-1]}
-            predictions[key] = result
+            predictions[key] = {data_columns[i]: prediction[:, i].tolist() for i in range(out_feature_num)}
 
             predictor.clear_session()  # 清除会话以释放内存
-
         return JSONResponse(content=predictions, status_code=200)
 
     except Exception as e:
@@ -427,54 +428,83 @@ def predict_ac_temp(
 
 
 @app.post('/optimize/ac_temp')
-def optimize_ac_temp(input_data: Predict_AC_Temp_Input,
-                     timesteps: int = Query(1, alias="TrainStep"),  # 输入时间步长
+def optimize_ac_temp(input_data: PredictACTempInput,
+                     timesteps: int = Query(1, alias="TrainStep"),  # 历史时间步长
                      predictsteps: int = Query(1, alias="PredictStep"),  # 预测时间步长
+                     population: int = Query(default=20, alias="Population"),  # 种群数量
+                     cxpb: float = Query(default=0.7, alias="CrossOverProbability"),  # 交叉概率
+                     mupb: float = Query(default=0.2, alias="MutationProbability"),  # 变异概率
+                     generation: int = Query(default=50, alias="Generations")  # 遗传代数
                      ):
     """
-    根据输入数据进行预测。
-    :param input_data: InputData 实例，包含温度数据等。格式为{data:{楼层：{’SFWD':[]...}...}}
-    :param timesteps: 输入时间步长。
-    :param predictsteps: 预测时间步长。
-    """
-    try:
-        priority_list = ["TEMPOUT", "HUMIDITY", "SFWDSDZ", "SFWD", "HFWD", "SPEED", "TEMPSET", "TEMPROOM", "Pt"]
-        optimizations = {}
 
-        # 开始d对每层楼的模型进行预测
+    目前只考虑下一时刻的功率和温度做优化。
+    （extensibility：预测未来n小时功率和温度，最优化未来n小时的平均功率和不同温度能耗。）
+    @param input_data: InputData 实例，包含温度数据等。格式为{data:{楼层：{’SFWD':[]...}...}}
+    @param timesteps: 历史时间步长。=1
+    @param predictsteps: 预测时间步长。=1
+    @param population: 种群数量
+    @param cxpb: 交叉概率，（0-1）之间
+    @param mupb: 变异概率，（0-1）之间
+    @param generation: 遗传代数
+    """
+
+    try:
+        optimizations = {}
         for key, value in input_data.data.items():
-            in_feature_num = len(value)
-            out_feature_num = int(int((len(value) - 6) / 3) + 1)  # 房间数目加1（总功率）
+
+            df = pd.DataFrame(value)  # 提取每个楼层中个房间ac信息value={'SFWD':[..], ...}
+
+            in_feature_num = df.shape[1]
+            if (df.shape[1] - EXTRA_VAR_NUM) % ROOM_VAR_NUM == 0:  # 如果不能整除，说明多（少）数据。
+                out_feature_num = int(int((df.shape[1] - EXTRA_VAR_NUM) / ROOM_VAR_NUM) + 1)  # 房间数目加1（总功率）
+            else:
+                raise ValueError("room numbers is not an integer, check your data. ")
 
             predictor = AirCondTempPredictor(input_shape=(timesteps, in_feature_num),
-                                             output_shape=(1, out_feature_num),  #只做下一步预测优化
-                                             priority_list=priority_list)
+                                             output_shape=(predictsteps, out_feature_num),
+                                             priority_list=PRIORITY_LIST)
 
             # 模型名称
             predictor.model_name = key
             # 模型神经网络结构
-            predictor.model_layers = [('gru', int(50), float(0.5)),
-                                      ('gru', int(100), float(0.5)),
-                                      ('linear', int(128), float(0.4)),
-                                      ('linear', int(64), float(0.4))]
+            predictor.model_layers = [('gru', int(GRU_UNIT[0][0]), float(GRU_UNIT[0][1])),
+                                      ('gru', int(GRU_UNIT[1][0]), float(GRU_UNIT[1][1])),
+                                      ('linear', int(AC_FC_UNIT[0][0]), float(AC_FC_UNIT[0][1])),
+                                      ('linear', int(AC_FC_UNIT[1][0]), float(AC_FC_UNIT[1][1]))]
+            # 注意，预测方法用ga_predict()，所以需要先加载模型
+            if not predictor.load_model():
+                error_message = f"Loading model failed. "
+                return JSONResponse(content={"error": error_message}, status_code=500)
 
-            df = pd.DataFrame(value)
+            # 预处理数据:将df column按照priority list排序并返回2d array
+            data, data_columns = predictor.preprocess_data(df)  # data
+            #print(np.shape(data)): return (1, in_feature_num)
+            # data = data.reshape(timesteps, in_feature_num)  # 保证 shape=[steps, in_feature_num),不需要，因为已经是了
 
-            data = predictor.preprocess_data(df)
-            data = data.reshape(-1)  # 展开数据
+            # 转化为list，因为遗传算法中数据注册形式时python 2dlist
+            re = data.tolist()
 
-            optimizer = GenericOptimizer(data, room_numbers=out_feature_num - 1,
-                                         model=predictor,
-                                         roomsettemp_range=(19, 23),
-                                         windtemp_range=(10, 14), population_size=20, generations=10)
-            optimizations[key] = optimizer.optimize_and_advise()
+            # 根据data，改变data最后['TEMPSET',"SFWDSDZ"]的值，来预测，看那个预测结果的objective function loss最小。
+            room_num = int((df.shape[1] - EXTRA_VAR_NUM) / ROOM_VAR_NUM)
+            setup_length = room_num + 1  # room number + 1 (SFWDSDZ)
+            residual = re[0][:-int(setup_length)]  # 数据中不变的那部分
 
-            predictor = None
-            optimizer = None
-        # print(optimizations)
+            optimizer = GenericOptimizer(residual, room_numbers=room_num,
+                                         model=predictor, population_size=population,
+                                         cxpb=cxpb, mupb=mupb, generations=generation)
+            optimizations[key] = optimizer.optimize_and_advise(data_columns)
+
+            predictor.clear_session()
+
+        print(optimizations)
+
         return JSONResponse(content=optimizations, status_code=200)
 
     except Exception as e:
         # Handle exceptions, log the error, and return an appropriate response
         error_message = f"An error occurred: {str(e)}"
         return JSONResponse(content={"error": error_message}, status_code=500)
+
+    finally:
+        gc.collect()

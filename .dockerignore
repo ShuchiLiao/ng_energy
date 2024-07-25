@@ -19,4 +19,7 @@ venv/
 *.zip
 *.pdf
 *.docx
+example_input_data
+logs
+
 

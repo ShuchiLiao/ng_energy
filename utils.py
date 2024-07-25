@@ -326,8 +326,9 @@ def process_ac_json_data(df, priority_list):
     sorted_columns = sorted(df.columns, key=key_priority)
     sorted_data = df[sorted_columns]
     data = sorted_data.dropna()
+    data_columns = data.columns
 
-    return data.to_numpy()
+    return data.to_numpy(), data_columns
 
 
 # functions for scaling

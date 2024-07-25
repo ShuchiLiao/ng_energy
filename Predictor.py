@@ -113,7 +113,7 @@ class Predictor:
 
                     elif layer_type.lower() == 'linear':
                         layers.append(nn.Linear(current_size, hidden_size))
-                        layers.append(nn.ReLU())       # bug 1: nn.ReLU 改为 nn.ReLU(); 实例
+                        layers.append(nn.ReLU())  # bug 1: nn.ReLU 改为 nn.ReLU(); 实例
                         layers.append(nn.Dropout(probability))
                         layer_num += 3
 
@@ -163,8 +163,7 @@ class Predictor:
         y = []
         for i in range(len(data) - self.input_shape[0] - self.output_shape[0]):
             X_ = data[i:i + self.input_shape[0], -self.input_shape[1]:]
-            y_ = data[i + self.input_shape[0]: i + self.input_shape[0]
-                                               + self.output_shape[0], :self.output_shape[1]]
+            y_ = data[i + self.input_shape[0]: i + self.input_shape[0] + self.output_shape[0], :self.output_shape[1]]
 
             X.append(X_.reshape(self.input_shape[0], self.input_shape[1]))
             y.append(y_.reshape(self.output_shape[0], self.output_shape[1]))
@@ -347,7 +346,6 @@ class Predictor:
             y_pred_normalized = self.model(X).cpu().numpy()
 
         # y_pred_normalized也为3d
-
         y_pred = inverse_transform_3d(data=y_pred_normalized, scaler=self.scaler_y)
 
         # remove batch size = 1:
@@ -376,7 +374,7 @@ class ElecUseShortTermPredictor(Predictor):
                     additional_data.append(value)  # 将非用电量数据提取出来（如温度和湿度）,加入到train
                     additional_data_keys.append(key)
 
-            updated_input_data = {k : v for k, v in input_data.items() if k not in additional_data_keys}
+            updated_input_data = {k: v for k, v in input_data.items() if k not in additional_data_keys}
             # 将非用电量数据从input_data中去除，防止影响后面for loop模型训练
 
         # data_list shape[n, m], ,m：time step number， n：feature number,需要转置为[m, n]
@@ -391,10 +389,34 @@ class AirCondTempPredictor(Predictor):
     def preprocess_data(self, df):
         # 为含有所有数据的dataframe，接下来进行排序等处理
 
-        data = process_ac_json_data(df, self.priority_list)
+        data, data_columns = process_ac_json_data(df, self.priority_list)
         # data：返回经过固定排序的二维array。（m=total_time_steps, n=feature_num)
 
-        return data
+        return data, data_columns
+
+    def ga_predict(self, X_i):
+        # 遗传算法优化时用这个function进行预测， 在main.py中首先加载模型
+        # X is numpy array [sequence_len, feature_num]
+        Xi = X_i.reshape(1, X_i.shape[0], X_i.shape[1])
+        # X is one instance (batch_size = 1)
+        # first scale
+        X = transform_3d(data=Xi, scaler=self.scaler_X)
+
+        # then convert to tensor
+        X = torch.tensor(X, dtype=torch.float32).to(self.device)
+        # match the shape (batch_size, sequence_length, feature_num)
+
+        self.model.eval()
+        with torch.no_grad():
+            y_pred_normalized = self.model(X).cpu().numpy()
+
+        # y_pred_normalized也为3d
+        y_pred = inverse_transform_3d(data=y_pred_normalized, scaler=self.scaler_y)
+
+        # remove batch size = 1:
+        y_i = y_pred.reshape(self.output_shape[0], self.output_shape[1])
+
+        return y_i
 
 
 class ElecUseLongTermPredictor(Predictor):
@@ -452,11 +474,9 @@ class ElecUseLongTermPredictor(Predictor):
         with torch.no_grad():
             y_pred_normalized = self.model(X).cpu().numpy()
 
-        y_pred = y_pred_normalized.reshape(-1, 1)  #保证2d array
+        y_pred = y_pred_normalized.reshape(-1, 1)  # 保证2d array
         y_i = self.scaler_y.inverse_transform(y_pred)
 
         self.predict_log.info(f'Done. \n')
 
         return y_i
-
-

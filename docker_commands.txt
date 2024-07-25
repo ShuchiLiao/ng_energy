@@ -1,3 +1,15 @@
+执行以下命令：
+docker login https://hub.eztolink.net:5447
+用户名：liao
+密码：Liao@1234
+
+将本地的image重新打个tag:
+docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG] (TAGET_IMAGE = hub.eztolink.net:5447/ai/xxx)
+
+上传镜像到仓库：
+docker push TARGET_IMAGE[:TAG]
+
+
 #进入容器的交互模式
 docker exec -it container-id /bin/sh
 
