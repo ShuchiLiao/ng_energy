@@ -111,7 +111,7 @@ class GenericOptimizer:
         pareto_front = tools.sortNondominated(population, len(population), first_front_only=True)[0]
 
         # Find the solution with the minimum value for objective 1 (temperature stability)
-        self.log.info(f"Done. ")
+        self.log.info(f"Done. \n")
         optimal_solution_temp_stability = min(pareto_front, key=lambda ind: ind.fitness.values[0])
         result1 = self.recommendation(optimal_solution_temp_stability, data_columns)
 
@@ -144,10 +144,10 @@ class GenericOptimizer:
         setup = {col: sol for col, sol in zip(setup_columns, solution)}
         predict = {col: p for col, p in zip(setup_columns, prediction)}
 
-        result = {'空调设定温度': {k: setup[k] for i, k in enumerate(setup) if i < len(setup) - 1},
-                  '送风设定温度': {k: setup[k] for i, k in enumerate(setup) if i == len(setup) - 1},
-                  '房间预测温度': {k: setup[k] for i, k in enumerate(predict) if i > 0},
-                  '总功率预测': {k: setup[k] for i, k in enumerate(predict) if i == 0}
+        result = {'空调设定温度': {k: [setup[k]] for i, k in enumerate(setup) if i < len(setup) - 1},
+                  '送风设定温度': {k: [setup[k]] for i, k in enumerate(setup) if i == len(setup) - 1},
+                  '房间预测温度': {k: [setup[k]] for i, k in enumerate(predict) if i > 0},
+                  '总功率预测': {k: [setup[k]] for i, k in enumerate(predict) if i == 0}
                   }
         return result
 

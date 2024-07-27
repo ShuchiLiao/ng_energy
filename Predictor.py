@@ -35,7 +35,8 @@ class Predictor:
         self.scaler_y_path = None
         self.scaler_y = MinMaxScaler(feature_range=(0, 1))
 
-        self.device = "cpu"
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        # self.device = 'cpu'
 
         self.train_log = setup_logger(f'{self.__class__.__name__}_train',
                                       'logs/' + f'{self.__class__.__name__}_train.log')
@@ -62,13 +63,13 @@ class Predictor:
 
     @model_name.setter
     def model_name(self, model_name):
-        self._model_name = (f'{self.__class__.__name__}-{model_name}-'
+        self._model_name = (f'{model_name}-'
                             f'in_{self.input_shape[0]}_{self.input_shape[1]}-'
                             f'out_{self.output_shape[0]}_{self.output_shape[1]}')
 
-        self.model_path = 'models/' + self._model_name + '.pth'
-        self.scaler_X_path = 'scalers/' + self._model_name + '_X.joblib'
-        self.scaler_y_path = 'scalers/' + self._model_name + '_y.joblib'
+        self.model_path = f'models/{self.__class__.__name__}/' + self._model_name + '.pth'
+        self.scaler_X_path = f'scalers/{self.__class__.__name__}/' + self._model_name + '_X.joblib'
+        self.scaler_y_path = f'scalers/{self.__class__.__name__}/' + self._model_name + '_y.joblib'
 
     def build_model(self):
         class Net(nn.Module):

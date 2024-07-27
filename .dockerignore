@@ -21,5 +21,10 @@ venv/
 *.docx
 example_input_data
 logs
-
+train_ac_temp_json
+train_pt_json
+*.sh
+ng_energy_1.0
+pycharm_tips.txt
+test_debug.py
 

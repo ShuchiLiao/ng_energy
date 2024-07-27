@@ -373,8 +373,4 @@ def inverse_transform_3d(data, scaler):
     return data_inversed
 
 
-if __name__ == '__main__':
-    # generated_eu_random_data_examples()
-    # process_ac_raw_data('./dataset2_20240319/K-8-1', 'K-8-1')
-    # process_long_term_usage_data_file('./data/2023.12.01-2024.4.11历史每小时用电量.json')
-    exit()
+

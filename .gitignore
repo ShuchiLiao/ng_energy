@@ -11,6 +11,7 @@ scalers/
 example_input_data
 logs
 venv/
+train_ac_temp_json
 *.json
 *.ipynb
 *.xlsx
@@ -19,3 +20,8 @@ venv/
 *.zip
 *.pdf
 *.docx
+train_pt_json
+*.sh
+ng_energy_1.0
+pycharm_tips.txt
+test_debug.py

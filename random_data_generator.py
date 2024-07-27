@@ -54,12 +54,12 @@ def generate_random_data_train_ac_temp(keys, extend_keys, n, m):
 
 def save_to_json(obj, filename: str):
     with open(f'{filename}.json', 'w') as f:
-        json.dump(obj.__dict__, f, indent=4)
+        json.dump(obj.__dict__, f)
 
 
 def save_to_json_2(dict, filename: str):
     with open(f'{filename}.json', 'w') as f:
-        json.dump(dict, f, indent=4)
+        json.dump(dict, f)
 
 
 # usage

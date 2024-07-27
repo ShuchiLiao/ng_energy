@@ -216,7 +216,7 @@ async def train_total_elec_use_long_term(
         # 定义神经网络结构(线性网络结构，数据不足以做rnn网络）
         predictor.model_layers = [('linear', int(EULT_FC_UNIT[0][0]), float(EULT_FC_UNIT[0][1])),
                                   ('linear', int(EULT_FC_UNIT[1][0]), float(EULT_FC_UNIT[1][1])),
-                                  ('linear', int(EULT_FC_UNIT[2][0]), float(EULT_FC_UNIT[2][0]))
+                                  ('linear', int(EULT_FC_UNIT[2][0]), float(EULT_FC_UNIT[2][1]))
                                   ]
 
         # 再次处理数据
@@ -278,7 +278,7 @@ async def predict_total_elec_use_long_term(
         # 定义神经网络结构(线性网络结构，数据不足以做rnn网络）
         predictor.model_layers = [('linear', int(EULT_FC_UNIT[0][0]), float(EULT_FC_UNIT[0][1])),
                                   ('linear', int(EULT_FC_UNIT[1][0]), float(EULT_FC_UNIT[1][1])),
-                                  ('linear', int(EULT_FC_UNIT[2][0]), float(EULT_FC_UNIT[2][0]))
+                                  ('linear', int(EULT_FC_UNIT[2][0]), float(EULT_FC_UNIT[2][1]))
                                   ]
 
         # 再次处理数据
@@ -326,10 +326,11 @@ async def train_ac_temp(
     # Read files if the file types are correct
     json_content = await data_file.read()
     json_data = json.loads(json_content.decode('utf-8'))
+    data = json_data["data"]
 
     # 文件名就是模型名，或者说楼层名，比如K8-1-1
     # 里面是字典形式的数据如：{’SFWD':[], 'ROOMTEMP':[]},可由爬虫工具得到。
-    df = pd.DataFrame(json_data)
+    df = pd.DataFrame(data)
 
     in_feature_num = df.shape[1]
     if (df.shape[1] - EXTRA_VAR_NUM) % ROOM_VAR_NUM == 0:  # 如果不能整除，说明多（少）数据。
